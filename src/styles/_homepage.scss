@@ -1,0 +1,72 @@
+.homepage {
+  .top-section {
+    position: relative;
+    text-align: center;
+    padding: 70px 20px 130px;
+    background-color: #f8f7f1;
+    border-bottom: 3px solid rgba(181, 178, 111, 0.3);
+
+    .text-wrapper {
+      max-width: 900px;
+      margin: auto;
+
+      h1 {
+        font-size: 48px;
+        color: #b5b26f;
+        font-weight: 700;
+      }
+
+      .description {
+        color: #b5b26f;
+        font-size: 16px;
+      }
+
+      .details {
+        color: #b5b26f;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      img {
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%, 140px);
+      }
+    }
+  }
+
+  .site-reviews {
+    padding: 150px 0;
+
+    .site-review {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 50px;
+      align-items: center;
+      box-shadow: 0px 4px 15px rgba(181, 178, 111, 0.3);
+      border-top: 4px solid #b5b26f;
+
+      .rating {
+        p {
+          margin: 0;
+          text-align: center;
+
+          &.rating-value {
+            font-size: 18px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      button {
+        font-family: "Montserrat";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(-20px, 50%);
+      }
+    }
+  }
+}

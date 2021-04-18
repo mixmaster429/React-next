@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(./Montserrat-Regular.ttf);
+}
+
+body {
+  background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Montserrat";
+}
+
+.ant-btn-primary {
+  background-color: #1449BB;
+  border: none;
+}
