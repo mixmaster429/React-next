@@ -1,10 +1,12 @@
 import React from "react";
 
 import { Header } from "@components";
-import { Row, Col, Rate, Button } from "antd";
+import { Row, Col, Rate, Button, Tabs, TabPane } from "antd";
 import { GlobalOutlined } from "@ant-design/icons";
 
 const Home: React.FC = () => {
+  const { TabPane } = Tabs;
+
   return (
     <div className="homepage">
       <Header />
@@ -41,9 +43,7 @@ const Home: React.FC = () => {
 
                   <div className="rating">
                     <p className="rating-value">Rating 9.9</p>
-                    <p>
-                      <Rate disabled defaultValue={5} />
-                    </p>
+                    <Rate disabled defaultValue={5} />
                   </div>
 
                   <Button type="primary" icon={<GlobalOutlined />}>
@@ -59,9 +59,7 @@ const Home: React.FC = () => {
 
                   <div className="rating">
                     <p className="rating-value">Rating 9.7</p>
-                    <p>
-                      <Rate disabled defaultValue={5} />
-                    </p>
+                    <Rate disabled defaultValue={5} />
                   </div>
 
                   <Button type="primary" icon={<GlobalOutlined />}>
@@ -77,9 +75,7 @@ const Home: React.FC = () => {
 
                   <div className="rating">
                     <p className="rating-value">Rating 9.5</p>
-                    <p>
-                      <Rate disabled defaultValue={5} />
-                    </p>
+                    <Rate disabled defaultValue={5} />
                   </div>
 
                   <Button type="primary" icon={<GlobalOutlined />}>
@@ -90,6 +86,102 @@ const Home: React.FC = () => {
             </Row>
           </Col>
         </Row>
+      </section>
+
+      <section className="featured-products">
+        <Tabs defaultActiveKey="1" type="card">
+          <TabPane tab="Featured" key="1">
+            <p className="title">Featured</p>
+            <Row>
+              <Col xs={{ span: 18, offset: 3 }}>
+                <div className="product-lists">
+                  <img src="imgs/product1.png" alt="" />
+
+                  <div className="product-detail">
+                    <div className="description">
+                      <p>America's Best-Priced Luxury Mattress</p>
+                      <p>Customer Appreciation Sale! - $200 OFF!</p>
+                      <p>
+                        This luxury mattress provides great value for money. The
+                        Saatva mattress comes in three different firmness level
+                        allowing it to accommodate all preferences. The mattress
+                        is built out of premium materials, it arrives
+                        uncompressed and ready to use.
+                      </p>
+                      <span>Rating 9.5</span> <Rate disabled defaultValue={5} />
+                    </div>
+
+                    <div className="shipping">
+                      <ul>
+                        <li>Award winning mattress</li>
+                        <li>365-Night Home Trial</li>
+                        <li>Forever warranty</li>
+                        <li>Free shipping</li>
+                      </ul>
+                      <a href="#">Show more</a>
+
+                      <p style={{ margin: 0 }}>
+                        <Button icon={<GlobalOutlined />}>SEE DEAL</Button>
+                        <Button type="primary" icon={<GlobalOutlined />}>
+                          VISIT WEBSITE
+                        </Button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="product-lists">
+                  <img src="imgs/product2.png" alt="" />
+
+                  <div className="product-detail">
+                    <div className="description">
+                      <p>America's Best-Priced Luxury Mattress</p>
+                      <p>Customer Appreciation Sale! - $200 OFF!</p>
+                      <p>
+                        This luxury mattress provides great value for money. The
+                        Saatva mattress comes in three different firmness level
+                        allowing it to accommodate all preferences. The mattress
+                        is built out of premium materials, it arrives
+                        uncompressed and ready to use.
+                      </p>
+                      <span>Rating 9.5</span> <Rate disabled defaultValue={5} />
+                    </div>
+
+                    <div className="shipping">
+                      <ul>
+                        <li>Award winning mattress</li>
+                        <li>365-Night Home Trial</li>
+                        <li>Forever warranty</li>
+                        <li>Free shipping</li>
+                      </ul>
+                      <a href="#">Show more</a>
+
+                      <Button icon={<GlobalOutlined />}>SEE DEAL</Button>
+                      <Button type="primary" icon={<GlobalOutlined />}>
+                        VISIT WEBSITE
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </TabPane>
+          <TabPane tab="In a Box" key="2">
+            Content of Tab Pane 2
+          </TabPane>
+          <TabPane tab="Memory Foam" key="3">
+            Content of Tab Pane 3
+          </TabPane>
+          <TabPane tab="Hybrid" key="4">
+            Content of Tab Pane 3
+          </TabPane>
+          <TabPane tab="Back-Pain" key="5">
+            Content of Tab Pane 3
+          </TabPane>
+          <TabPane tab="Premium" key="6">
+            Content of Tab Pane 3
+          </TabPane>
+        </Tabs>
       </section>
     </div>
   );

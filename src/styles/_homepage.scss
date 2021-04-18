@@ -43,7 +43,7 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-      padding: 50px;
+      padding: 50px 30px 50px 40px;
       align-items: center;
       box-shadow: 0px 4px 15px rgba(181, 178, 111, 0.3);
       border-top: 4px solid #b5b26f;
@@ -66,6 +66,82 @@
         bottom: 0;
         right: 0;
         transform: translate(-20px, 50%);
+      }
+    }
+  }
+
+  .featured-products {
+    position: relative;
+
+    .ant-tabs {
+      .ant-tabs-nav {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border: 1px solid #b5b26f;
+
+        .ant-tabs-nav-list {
+          justify-content: center;
+
+          .ant-tabs-tab {
+            margin: 0;
+            padding: 7px 30px;
+            border: none;
+            font-family: "Montserrat";
+
+            &.ant-tabs-tab-active {
+              background-color: #b5b26f;
+
+              .ant-tabs-tab-btn {
+                color: white;
+              }
+            }
+
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-tabs-content-holder {
+      margin-top: 20px;
+      background-color: #f8f7f1;
+
+      .title {
+        color: transparent;
+        font-size: 120px;
+        margin: 0;
+        text-align: center;
+        -webkit-text-stroke: 2px #b5b26f;
+      }
+
+      .product-lists {
+        display: flex;
+        background-color: white;
+        box-shadow: 0px 4px 15px rgba(181, 178, 111, 0.3);
+        margin-bottom: 50px;
+
+        .product-detail {
+          padding: 0 20px 0;
+          display: flex;
+          align-items: flex-end;
+
+          .description {
+            width: 60%;
+            padding: 30px;
+          }
+
+          .shipping {
+            width: 40%;
+            padding: 30px;
+
+            ul {
+              padding: 0;
+            }
+          }
+        }
       }
     }
   }
