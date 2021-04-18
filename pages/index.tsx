@@ -1,11 +1,92 @@
 import React from "react";
 
 import { Header } from "@components";
-import { Row, Col, Rate, Button, Tabs, TabPane } from "antd";
-import { GlobalOutlined } from "@ant-design/icons";
+import { Row, Col, Rate, Button, Tabs } from "antd";
+import { GlobalOutlined, TagOutlined } from "@ant-design/icons";
 
 const Home: React.FC = () => {
   const { TabPane } = Tabs;
+
+  const product_data = [
+    {
+      product_image: "imgs/product4.png",
+      company_image: "imgs/comp4.png",
+    },
+    {
+      product_image: "imgs/product5.png",
+      company_image: "imgs/comp5.png",
+    },
+    {
+      product_image: "imgs/product6.png",
+      company_image: "imgs/comp6.png",
+    },
+    {
+      product_image: "imgs/product7.png",
+      company_image: "imgs/comp7.png",
+    },
+    {
+      product_image: "imgs/product8.png",
+      company_image: "imgs/comp8.png",
+    },
+    {
+      product_image: "imgs/product9.png",
+      company_image: "imgs/comp9.png",
+    },
+    {
+      product_image: "imgs/product10.png",
+      company_image: "imgs/comp10.png",
+    },
+  ];
+
+  const product_list = () => {
+    return product_data.map((item, key) => {
+      return (
+        <div className="product-list" key={key}>
+          <div className="product-image">
+            <div className="product-number">#{key + 4}</div>
+            <img src={item.product_image} alt="" />
+          </div>
+
+          <div className="product-detail">
+            <img src={item.company_image} alt="" className="company-logo" />
+            <div className="description">
+              <p className="title">America's Best-Priced Luxury Mattress</p>
+              <p className="sale">Customer Appreciation Sale! - $200 OFF!</p>
+              <p className="product-description">
+                This luxury mattress provides great value for money. The Saatva
+                mattress comes in three different firmness level allowing it to
+                accommodate all preferences. The mattress is built out of
+                premium materials, it arrives uncompressed and ready to use.
+              </p>
+              <span className="product-rating">Rating 9.5</span>
+              <Rate disabled defaultValue={5} />
+            </div>
+
+            <div className="shipping">
+              <ul>
+                <li>Award winning mattress</li>
+                <li>365-Night Home Trial</li>
+                <li>Forever warranty</li>
+                <li>Free shipping</li>
+              </ul>
+              <a href="#" className="show-more">
+                Show more
+              </a>
+
+              <p className="actions">
+                <Button type="ghost" icon={<TagOutlined />}>
+                  SEE DEAL
+                </Button>
+                <Button type="primary" icon={<GlobalOutlined />}>
+                  VISIT WEBSITE
+                </Button>
+              </p>
+            </div>
+          </div>
+        </div>
+      );
+    });
+  };
 
   return (
     <div className="homepage">
@@ -88,81 +169,193 @@ const Home: React.FC = () => {
         </Row>
       </section>
 
-      <section className="featured-products">
+      <section className="products">
         <Tabs defaultActiveKey="1" type="card">
           <TabPane tab="Featured" key="1">
-            <p className="title">Featured</p>
+            <div className="featured-products">
+              <p className="section-title">Featured</p>
+
+              <Row>
+                <Col xs={{ span: 18, offset: 3 }}>
+                  <div className="product-lists">
+                    <div className="product-list">
+                      <div className="product-image">
+                        <span className="featured-badge editor">
+                          <img src="imgs/badge1.png" alt="" />
+                          EDITOR'S CHOICE
+                        </span>
+                        <div className="product-number">#1</div>
+                        <img src="imgs/product1.png" alt="" />
+                      </div>
+
+                      <div className="product-detail">
+                        <img
+                          src="imgs/comp1.png"
+                          alt=""
+                          className="company-logo"
+                        />
+                        <div className="description">
+                          <p className="title">
+                            America's Best-Priced Luxury Mattress
+                          </p>
+                          <p className="sale">
+                            Customer Appreciation Sale! - $200 OFF!
+                          </p>
+                          <p className="product-description">
+                            This luxury mattress provides great value for money.
+                            The Saatva mattress comes in three different
+                            firmness level allowing it to accommodate all
+                            preferences. The mattress is built out of premium
+                            materials, it arrives uncompressed and ready to use.
+                          </p>
+                          <span className="product-rating">Rating 9.5</span>
+                          <Rate disabled defaultValue={5} />
+                        </div>
+
+                        <div className="shipping">
+                          <ul>
+                            <li>Award winning mattress</li>
+                            <li>365-Night Home Trial</li>
+                            <li>Forever warranty</li>
+                            <li>Free shipping</li>
+                          </ul>
+                          <a href="#" className="show-more">
+                            Show more
+                          </a>
+
+                          <p className="actions">
+                            <Button type="ghost" icon={<TagOutlined />}>
+                              SEE DEAL
+                            </Button>
+                            <Button type="primary" icon={<GlobalOutlined />}>
+                              VISIT WEBSITE
+                            </Button>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="product-list">
+                      <div className="product-image">
+                        <span className="featured-badge biggest">
+                          <img src="imgs/badge2.png" alt="" />
+                          biggest offer ever
+                        </span>
+                        <div className="product-number">#2</div>
+                        <img src="imgs/product2.png" alt="" />
+                      </div>
+
+                      <div className="product-detail">
+                        <img
+                          src="imgs/comp2.png"
+                          alt=""
+                          className="company-logo"
+                        />
+                        <div className="description">
+                          <p className="title">
+                            America's Best-Priced Luxury Mattress
+                          </p>
+                          <p className="sale">
+                            Customer Appreciation Sale! - $200 OFF!
+                          </p>
+                          <p className="product-description">
+                            This luxury mattress provides great value for money.
+                            The Saatva mattress comes in three different
+                            firmness level allowing it to accommodate all
+                            preferences. The mattress is built out of premium
+                            materials, it arrives uncompressed and ready to use.
+                          </p>
+                          <span className="product-rating">Rating 9.5</span>
+                          <Rate disabled defaultValue={5} />
+                        </div>
+
+                        <div className="shipping">
+                          <ul>
+                            <li>Award winning mattress</li>
+                            <li>365-Night Home Trial</li>
+                            <li>Forever warranty</li>
+                            <li>Free shipping</li>
+                          </ul>
+                          <a href="#" className="show-more">
+                            Show more
+                          </a>
+
+                          <p className="actions">
+                            <Button type="ghost" icon={<TagOutlined />}>
+                              SEE DEAL
+                            </Button>
+                            <Button type="primary" icon={<GlobalOutlined />}>
+                              VISIT WEBSITE
+                            </Button>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="product-list">
+                      <div className="product-image">
+                        <span className="featured-badge best-seller">
+                          <img src="imgs/badge3.png" alt="" />
+                          best seller
+                        </span>
+                        <div className="product-number">#3</div>
+                        <img src="imgs/product3.png" alt="" />
+                      </div>
+
+                      <div className="product-detail">
+                        <img
+                          src="imgs/comp3.png"
+                          alt=""
+                          className="company-logo"
+                        />
+                        <div className="description">
+                          <p className="title">
+                            America's Best-Priced Luxury Mattress
+                          </p>
+                          <p className="sale">
+                            Customer Appreciation Sale! - $200 OFF!
+                          </p>
+                          <p className="product-description">
+                            This luxury mattress provides great value for money.
+                            The Saatva mattress comes in three different
+                            firmness level allowing it to accommodate all
+                            preferences. The mattress is built out of premium
+                            materials, it arrives uncompressed and ready to use.
+                          </p>
+                          <span className="product-rating">Rating 9.5</span>
+                          <Rate disabled defaultValue={5} />
+                        </div>
+
+                        <div className="shipping">
+                          <ul>
+                            <li>Award winning mattress</li>
+                            <li>365-Night Home Trial</li>
+                            <li>Forever warranty</li>
+                            <li>Free shipping</li>
+                          </ul>
+                          <a href="#" className="show-more">
+                            Show more
+                          </a>
+
+                          <p className="actions">
+                            <Button type="ghost" icon={<TagOutlined />}>
+                              SEE DEAL
+                            </Button>
+                            <Button type="primary" icon={<GlobalOutlined />}>
+                              VISIT WEBSITE
+                            </Button>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+
             <Row>
               <Col xs={{ span: 18, offset: 3 }}>
-                <div className="product-lists">
-                  <img src="imgs/product1.png" alt="" />
-
-                  <div className="product-detail">
-                    <div className="description">
-                      <p>America's Best-Priced Luxury Mattress</p>
-                      <p>Customer Appreciation Sale! - $200 OFF!</p>
-                      <p>
-                        This luxury mattress provides great value for money. The
-                        Saatva mattress comes in three different firmness level
-                        allowing it to accommodate all preferences. The mattress
-                        is built out of premium materials, it arrives
-                        uncompressed and ready to use.
-                      </p>
-                      <span>Rating 9.5</span> <Rate disabled defaultValue={5} />
-                    </div>
-
-                    <div className="shipping">
-                      <ul>
-                        <li>Award winning mattress</li>
-                        <li>365-Night Home Trial</li>
-                        <li>Forever warranty</li>
-                        <li>Free shipping</li>
-                      </ul>
-                      <a href="#">Show more</a>
-
-                      <p style={{ margin: 0 }}>
-                        <Button icon={<GlobalOutlined />}>SEE DEAL</Button>
-                        <Button type="primary" icon={<GlobalOutlined />}>
-                          VISIT WEBSITE
-                        </Button>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="product-lists">
-                  <img src="imgs/product2.png" alt="" />
-
-                  <div className="product-detail">
-                    <div className="description">
-                      <p>America's Best-Priced Luxury Mattress</p>
-                      <p>Customer Appreciation Sale! - $200 OFF!</p>
-                      <p>
-                        This luxury mattress provides great value for money. The
-                        Saatva mattress comes in three different firmness level
-                        allowing it to accommodate all preferences. The mattress
-                        is built out of premium materials, it arrives
-                        uncompressed and ready to use.
-                      </p>
-                      <span>Rating 9.5</span> <Rate disabled defaultValue={5} />
-                    </div>
-
-                    <div className="shipping">
-                      <ul>
-                        <li>Award winning mattress</li>
-                        <li>365-Night Home Trial</li>
-                        <li>Forever warranty</li>
-                        <li>Free shipping</li>
-                      </ul>
-                      <a href="#">Show more</a>
-
-                      <Button icon={<GlobalOutlined />}>SEE DEAL</Button>
-                      <Button type="primary" icon={<GlobalOutlined />}>
-                        VISIT WEBSITE
-                      </Button>
-                    </div>
-                  </div>
-                </div>
+                <div className="product-lists">{product_list()}</div>
               </Col>
             </Row>
           </TabPane>

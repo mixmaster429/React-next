@@ -70,7 +70,7 @@
     }
   }
 
-  .featured-products {
+  .products {
     position: relative;
 
     .ant-tabs {
@@ -107,38 +107,154 @@
 
     .ant-tabs-content-holder {
       margin-top: 20px;
-      background-color: #f8f7f1;
 
-      .title {
+      .featured-products {
+        background-color: #f8f7f1;
+        margin-bottom: 50px;
+      }
+
+      .section-title {
         color: transparent;
         font-size: 120px;
         margin: 0;
         text-align: center;
         -webkit-text-stroke: 2px #b5b26f;
+        padding: 30px 0;
       }
 
       .product-lists {
-        display: flex;
-        background-color: white;
-        box-shadow: 0px 4px 15px rgba(181, 178, 111, 0.3);
-        margin-bottom: 50px;
-
-        .product-detail {
-          padding: 0 20px 0;
+        .product-list {
           display: flex;
-          align-items: flex-end;
+          background-color: white;
+          box-shadow: 0px 4px 15px rgba(181, 178, 111, 0.3);
+          margin-bottom: 50px;
 
-          .description {
-            width: 60%;
-            padding: 30px;
+          .product-image {
+            position: relative;
+
+            .featured-badge {
+              position: absolute;
+              color: white;
+              font-family: "Montserrat";
+              font-size: 14px;
+              font-weight: 600;
+              padding: 3px 10px;
+              top: 15px;
+              left: -15px;
+              text-transform: uppercase;
+
+              img {
+                margin-right: 5px;
+              }
+
+              &.editor {
+                background-color: #fe6581;
+              }
+
+              &.biggest {
+                background-color: #00b227;
+              }
+
+              &.best-seller {
+                background-color: #fcdc74;
+                color: #454545;
+              }
+            }
+
+            .product-number {
+              position: absolute;
+              top: 15px;
+              right: 15px;
+              background-color: #1449bb;
+              border-radius: 50%;
+              width: 35px;
+              height: 35px;
+              color: white;
+              text-align: center;
+              line-height: 35px;
+              font-size: 14px;
+              font-weight: 700;
+              font-family: "Montserrat";
+            }
           }
 
-          .shipping {
-            width: 40%;
-            padding: 30px;
+          .product-detail {
+            padding: 0 20px 0;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
 
-            ul {
-              padding: 0;
+            .company-logo {
+              position: absolute;
+              top: 30px;
+              right: 30px;
+            }
+
+            .description {
+              width: 60%;
+              padding: 30px;
+
+              .title {
+                font-size: 18px;
+                color: rgba(69, 69, 69, 1);
+                font-weight: 700;
+                margin: 0;
+              }
+
+              .sale {
+                color: rgba(205, 67, 60, 1);
+                font-size: 18px;
+                font-weight: 700;
+              }
+
+              .product-description {
+                margin-bottom: 50px;
+              }
+
+              .product-rating {
+                font-weight: 700;
+                font-size: 16px;
+                color: rgba(69, 69, 69, 1);
+                margin-right: 20px;
+              }
+            }
+
+            .shipping {
+              width: 40%;
+              padding: 30px;
+
+              ul {
+                padding: 0;
+                margin: 0;
+
+                li {
+                  font-family: "Montserrat";
+                  font-size: 14px;
+                  font-weight: 600;
+                  margin: 7px 0;
+                }
+              }
+
+              .show-more {
+                font-family: "Montserrat";
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: underline;
+              }
+
+              .actions {
+                margin: 0;
+                margin-top: 20px;
+
+                button {
+                  font-family: "Montserrat";
+                  font-weight: 700;
+
+                  &:first-child {
+                    margin-right: 20px;
+                  }
+                }
+              }
             }
           }
         }

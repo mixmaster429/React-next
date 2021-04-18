@@ -18,6 +18,22 @@ p {
 }
 
 .ant-btn-primary {
-  background-color: #1449BB;
+  background-color: #1449bb;
   border: none;
+
+  &:hover {
+    background-color: #1449bb;
+    color: white;
+  }
+}
+
+.ant-btn-ghost {
+  background-color: #b5916f;
+  color: white;
+  border: none;
+
+  &:hover {
+    background-color: #b5916f;
+    color: white;
+  }
 }
