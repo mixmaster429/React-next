@@ -19,7 +19,9 @@
         "react": "17.0.2",
         "react-dom": "17.0.2",
         "react-redux": "^7.2.2",
+        "react-slick": "^0.28.1",
         "sass": "^1.32.10",
+        "slick-carousel": "^1.8.1",
         "styled-components": "^5.2.1",
         "styled-system": "^5.1.5"
     },

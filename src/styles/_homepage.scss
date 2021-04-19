@@ -38,6 +38,36 @@
   .site-reviews {
     padding: 150px 0;
 
+    .slider-element {
+      .slick-slide {
+        padding: 30px;
+      }
+
+      .slick-dots {
+        li {
+          &.slick-active {
+            width: 60px;
+
+            button {
+              width: 50px;
+              background-color: #b5916f;
+            }
+          }
+
+          button {
+            width: 3px;
+            height: 3px;
+            background-color: lightgray;
+            border-radius: 5px;
+
+            &::before {
+              content: "";
+            }
+          }
+        }
+      }
+    }
+
     .site-review {
       position: relative;
       width: 100%;
@@ -321,7 +351,7 @@
       .big-title {
         font-size: 20px;
         font-weight: 700;
-        color: #B5916F;
+        color: #b5916f;
         margin: 40px 0;
       }
     }

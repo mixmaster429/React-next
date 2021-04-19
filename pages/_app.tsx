@@ -5,15 +5,17 @@ import { StyledThemeProvider } from "@definitions/styled-components";
 import { Provider } from "react-redux";
 import store from "@redux/store";
 import "@styles/main.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
-    return (
-        <StyledThemeProvider>
-            <Provider store={store}>
-                <Component {...pageProps} />
-            </Provider>
-        </StyledThemeProvider>
-    );
+  return (
+    <StyledThemeProvider>
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
+    </StyledThemeProvider>
+  );
 }
 
 export default MyApp;

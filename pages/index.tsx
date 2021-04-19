@@ -1,8 +1,8 @@
 import React from "react";
-
 import { Footer, Header } from "@components";
 import { Row, Col, Rate, Button, Tabs } from "antd";
 import { GlobalOutlined, TagOutlined } from "@ant-design/icons";
+import Slider from "react-slick";
 
 const Home: React.FC = () => {
   const { TabPane } = Tabs;
@@ -86,6 +86,15 @@ const Home: React.FC = () => {
         </div>
       );
     });
+  };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    className: "slider-element",
   };
 
   return (
@@ -465,6 +474,85 @@ const Home: React.FC = () => {
         </Row>
       </section>
 
+      <section className="site-reviews">
+        <Slider {...settings}>
+          <div>
+            <div className="site-review">
+              <img src="imgs/num1.png" alt="" />
+              <img src="imgs/site1.png" alt="" />
+
+              <div className="rating">
+                <p className="rating-value">Rating 9.9</p>
+                <Rate disabled defaultValue={5} />
+              </div>
+
+              <Button type="primary" icon={<GlobalOutlined />}>
+                Visit website
+              </Button>
+            </div>
+          </div>
+          <div>
+            <div className="site-review">
+              <img src="imgs/num1.png" alt="" />
+              <img src="imgs/site1.png" alt="" />
+
+              <div className="rating">
+                <p className="rating-value">Rating 9.9</p>
+                <Rate disabled defaultValue={5} />
+              </div>
+
+              <Button type="primary" icon={<GlobalOutlined />}>
+                Visit website
+              </Button>
+            </div>
+          </div>
+          <div>
+            <div className="site-review">
+              <img src="imgs/num1.png" alt="" />
+              <img src="imgs/site1.png" alt="" />
+
+              <div className="rating">
+                <p className="rating-value">Rating 9.9</p>
+                <Rate disabled defaultValue={5} />
+              </div>
+
+              <Button type="primary" icon={<GlobalOutlined />}>
+                Visit website
+              </Button>
+            </div>
+          </div>
+          <div>
+            <div className="site-review">
+              <img src="imgs/num1.png" alt="" />
+              <img src="imgs/site1.png" alt="" />
+
+              <div className="rating">
+                <p className="rating-value">Rating 9.9</p>
+                <Rate disabled defaultValue={5} />
+              </div>
+
+              <Button type="primary" icon={<GlobalOutlined />}>
+                Visit website
+              </Button>
+            </div>
+          </div>
+          <div>
+            <div className="site-review">
+              <img src="imgs/num1.png" alt="" />
+              <img src="imgs/site1.png" alt="" />
+
+              <div className="rating">
+                <p className="rating-value">Rating 9.9</p>
+                <Rate disabled defaultValue={5} />
+              </div>
+
+              <Button type="primary" icon={<GlobalOutlined />}>
+                Visit website
+              </Button>
+            </div>
+          </div>
+        </Slider>
+      </section>
       <Footer></Footer>
     </div>
   );
