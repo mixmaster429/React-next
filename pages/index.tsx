@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header } from "@components";
+import { Footer, Header } from "@components";
 import { Row, Col, Rate, Button, Tabs } from "antd";
 import { GlobalOutlined, TagOutlined } from "@ant-design/icons";
 
@@ -464,6 +464,8 @@ const Home: React.FC = () => {
           </Col>
         </Row>
       </section>
+
+      <Footer></Footer>
     </div>
   );
 };
