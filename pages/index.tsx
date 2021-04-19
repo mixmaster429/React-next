@@ -178,7 +178,7 @@ const Home: React.FC = () => {
               <Row>
                 <Col xs={{ span: 18, offset: 3 }}>
                   <div className="product-lists">
-                    <div className="product-list">
+                    <div className="product-list editor">
                       <div className="product-image">
                         <span className="featured-badge editor">
                           <img src="imgs/badge1.png" alt="" />
@@ -235,7 +235,7 @@ const Home: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="product-list">
+                    <div className="product-list biggest">
                       <div className="product-image">
                         <span className="featured-badge biggest">
                           <img src="imgs/badge2.png" alt="" />
@@ -292,7 +292,7 @@ const Home: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="product-list">
+                    <div className="product-list best-seller">
                       <div className="product-image">
                         <span className="featured-badge best-seller">
                           <img src="imgs/badge3.png" alt="" />
@@ -375,6 +375,94 @@ const Home: React.FC = () => {
             Content of Tab Pane 3
           </TabPane>
         </Tabs>
+      </section>
+
+      <section className="choose-best">
+        <div className="section-banner">
+          <Row>
+            <Col lg={{ span: 10, offset: 4 }}>
+              <p className="title">How to Choose the Best Mattress?</p>
+            </Col>
+
+            <img src="imgs/image1.png" alt="" />
+          </Row>
+        </div>
+
+        <Row>
+          <Col lg={{ span: 12, offset: 4 }}>
+            <div className="section-details">
+              <p className="title">Comprehensive Guide for 2021</p>
+              <p>
+                Buying a mattress is not something that we do regularly. Since
+                you’re here, the chances are you’re either replacing an old and
+                worn-out mattress or buying your first. Either way, you’re
+                likely overwhelmed by the various brands available today. But
+                what you’ll find even more perplexing are the different mattress
+                technologies and the jargon used in the market. In this ultimate
+                mattress buying guide, we’ve highlighted some critical tips to
+                guide you when choosing the best mattress to buy today. We
+                understand that narrowing down to just one bed from the sea of
+                options in the market isn’t easy. For that reason, we’ve also
+                included links to some of the top rated mattresses that may
+                perfectly match your sleeping needs.
+              </p>
+
+              <p className="title">5 Major Types of Mattresses</p>
+              <p>
+                There are lots of decisions to make when purchasing a new
+                mattress. But in our experience with different people’s buying
+                habits, the most challenging decision is usually choosing
+                between the different types of mattresses.
+              </p>
+              <p className="big-title">What is the best mattress to buy?</p>
+              <p className="title">Memory Foam</p>
+              <p>
+                In the trade, memory foam is known as visco-elastic foam owing
+                to its viscous and elastic properties. Memory foam responds to
+                your body temperature and weight (pressure) to contour to your
+                body shape and curves. When you get off the bed, the mattress
+                recovers slowly to regain its original condition.
+              </p>
+              <p className="title">Latex Mattress</p>
+              <p>
+                Latex is a natural material derived from the sap of rubber
+                trees. This material offers most of the benefits of memory foam,
+                including pressure relief and motion isolation. However, it does
+                not have the stuck-in-bed feeling that makes traditional memory
+                foam a little annoying.
+              </p>
+              <p className="title">Innerspring Mattress</p>
+              <p>
+                These beds are commonly known as coil mattresses and date way
+                back to 1865. Although they have gradually lost their luster
+                over the years, innerspring mattresses are still a popular pick
+                today due in part to their affordability.
+              </p>
+              <p className="title">Hybrid Mattress</p>
+              <p>
+                Hybrid mattresses are a new style of beds that combine 2 or more
+                mattress technologies. A typical hybrid mattress has an all-foam
+                comfort section and a coil-based core. Most of these mattresses
+                employ memory foam for the comfort layer, although latex is
+                common too. For the support system, most of the cheap models
+                have traditional Bonnell springs. However, the best hybrid
+                mattresses for the money have individually encased springs that
+                move independently to lower motion isolation and offer localized
+                support just where you need it.
+              </p>
+              <p className="title">Pillow Top Mattress</p>
+              <p>
+                Pillow top mattresses are a relatively new craze, too. These
+                models are popular with individuals who want a mattress with a
+                plush sleeping surface and a good balance of support and
+                cushioning. A pillow-top mattress is a 2-tier bed with a support
+                section that can be anything from coil to foam or latex. The
+                pillow-top section is sewn or glued onto the main mattress and
+                may comprise wool, latex, or memory foam, among other materials.
+              </p>
+            </div>
+          </Col>
+        </Row>
       </section>
     </div>
   );
