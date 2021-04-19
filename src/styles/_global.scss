@@ -17,6 +17,22 @@ p {
   font-family: "Montserrat";
 }
 
+input, textarea {
+  font-family: "Montserrat";
+  padding: 7px 20px !important;
+}
+
+.btn-large {
+  padding: 10px 20px;
+  line-height: unset;
+  height: unset;
+  font-size: 12px;
+  font-weight: "Montserrat";
+  border: none;
+  background-color: #F2C94C;
+  color: #454545;
+}
+
 .ant-btn-primary {
   background-color: #1449bb;
   border: none;
