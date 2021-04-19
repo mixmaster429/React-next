@@ -416,6 +416,7 @@ const Home: React.FC = () => {
                 perfectly match your sleeping needs.
               </p>
 
+              <img src="imgs/image2.png" alt="" />
               <p className="title">5 Major Types of Mattresses</p>
               <p>
                 There are lots of decisions to make when purchasing a new
@@ -432,6 +433,7 @@ const Home: React.FC = () => {
                 body shape and curves. When you get off the bed, the mattress
                 recovers slowly to regain its original condition.
               </p>
+              <img src="imgs/image3.png" alt="" />
               <p className="title">Latex Mattress</p>
               <p>
                 Latex is a natural material derived from the sap of rubber
@@ -448,6 +450,7 @@ const Home: React.FC = () => {
                 today due in part to their affordability.
               </p>
               <p className="title">Hybrid Mattress</p>
+              <img src="imgs/image4.png" alt="" />
               <p>
                 Hybrid mattresses are a new style of beds that combine 2 or more
                 mattress technologies. A typical hybrid mattress has an all-foam

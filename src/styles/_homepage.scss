@@ -337,7 +337,7 @@
 
     .section-details {
       margin-top: -150px;
-      padding: 60px 120px;
+      padding: 60px 150px 60px 120px;
       box-shadow: 0px 4px 15px rgba(181, 178, 111, 0.3);
       background-color: white;
 
@@ -354,6 +354,23 @@
         color: #b5916f;
         margin: 40px 0;
       }
+
+      img {
+        position: absolute;
+
+        &:nth-of-type(1) {
+          right: -150px;
+        }
+
+        &:nth-of-type(2) {
+          right: -300px;
+        }
+
+        &:nth-of-type(3) {
+          right: -200px;
+        }
+      }
+
     }
   }
 }
