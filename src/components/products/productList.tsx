@@ -1,6 +1,5 @@
 import React from 'react';
-import { Row, Col, Rate, Button } from 'antd';
-import { GlobalOutlined, TagOutlined } from '@ant-design/icons';
+import { Row, Col } from 'antd';
 import { ProductItem } from './productItem';
 import { FeaturedProduct } from './featuredProduct';
 
@@ -45,14 +44,14 @@ export const ProductList: React.FC = () => {
       badge_text: "EDITOR'S CHOICE",
     },
     {
-      product_image: 'imgs/product1.png',
+      product_image: 'imgs/product2.png',
       company_image: 'imgs/comp2.png',
       badge_type: 'biggest',
       badge_icon: 'imgs/badge2.png',
       badge_text: 'biggest offer ever',
     },
     {
-      product_image: 'imgs/product1.png',
+      product_image: 'imgs/product3.png',
       company_image: 'imgs/comp3.png',
       badge_type: 'editor',
       badge_icon: 'imgs/badge3.png',

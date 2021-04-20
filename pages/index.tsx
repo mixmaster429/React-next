@@ -5,12 +5,24 @@ import Slider from 'react-slick';
 
 const Home: React.FC = () => {
   const settings = {
+    centerMode: true,
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     className: 'slider-element',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   };
 
   return (
@@ -62,7 +74,7 @@ const Home: React.FC = () => {
       <section className="choose-best">
         <div className="section-banner">
           <Row>
-            <Col lg={{ span: 10, offset: 4 }}>
+            <Col xl={{ span: 10, offset: 4 }} lg={{ span: 16, offset: 4 }}>
               <p className="title">How to Choose the Best Mattress?</p>
             </Col>
 

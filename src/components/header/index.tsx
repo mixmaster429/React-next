@@ -16,7 +16,11 @@ export const Header: React.FC = () => {
   return (
     <div className="header">
       <Row style={{ width: '100%' }}>
-        <Col xl={{ span: 20, offset: 2 }} lg={{ span: 20, offset: 2 }}>
+        <Col
+          xl={{ span: 20, offset: 2 }}
+          lg={{ span: 20, offset: 2 }}
+          md={{ span: 20, offset: 2 }}
+        >
           <div className="navbar">
             <Logo />
 

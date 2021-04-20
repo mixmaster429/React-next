@@ -303,11 +303,12 @@
 
               .actions {
                 margin: 0;
-                margin-top: 20px;
+                margin-top: 10px;
 
                 button {
                   font-family: 'Montserrat';
                   font-weight: 700;
+                  margin-top: 10px;
 
                   &:first-child {
                     margin-right: 20px;
@@ -342,6 +343,12 @@
         position: absolute;
         right: 200px;
         z-index: 1;
+
+        @media (max-width: 1200px) {
+          width: 500px;
+          top: 100px;
+          right: 0;
+        }
       }
     }
 
@@ -367,6 +374,10 @@
 
       img {
         position: absolute;
+
+        @media (max-width: 992px) {
+          position: relative;
+        }
 
         &:nth-of-type(1) {
           right: -150px;
