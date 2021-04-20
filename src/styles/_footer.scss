@@ -36,10 +36,11 @@ footer {
       }
 
       .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         input {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
           margin: 5px 0;
         }
       }
