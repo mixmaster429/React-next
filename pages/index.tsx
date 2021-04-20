@@ -1,6 +1,6 @@
 import React from 'react';
 import { Footer, Header, Products, SiteReview } from '@components';
-import { Row, Col, Space } from 'antd';
+import { Row, Col } from 'antd';
 import Slider from 'react-slick';
 
 const Home: React.FC = () => {
@@ -162,7 +162,7 @@ const Home: React.FC = () => {
         </Row>
       </section>
 
-      <section className="site-reviews">
+      <section className="site-reviews slider">
         <Slider {...settings}>
           <div>
             <SiteReview></SiteReview>
