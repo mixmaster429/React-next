@@ -2,7 +2,7 @@
   .top-section {
     position: relative;
     text-align: center;
-    padding: 50px 20px 130px;
+    padding: 40px 20px 130px;
     background-color: #f8f7f1;
     border-bottom: 3px solid rgba(181, 178, 111, 0.3);
 
@@ -75,7 +75,7 @@
       display: flex;
       justify-content: space-between;
       padding: 50px 30px 50px 40px;
-      margin-top: 30px;
+      margin-top: 45px;
       align-items: center;
       box-shadow: 0px 4px 15px rgba(181, 178, 111, 0.3);
       border-top: 4px solid #b5b26f;
@@ -166,11 +166,11 @@
 
       .section-title {
         color: transparent;
-        font-size: 120px;
+        font-size: 100px;
         margin: 0;
         text-align: center;
         -webkit-text-stroke: 2px #b5b26f;
-        padding: 30px 0;
+        padding-top: 30px;
       }
 
       .product-lists {
