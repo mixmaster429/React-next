@@ -70,8 +70,7 @@ const Home: React.FC = () => {
 
           <p className="details">
             Advertising Disclosure: We receive referral fees from the brands
-            listed below.
-            <a href="#">Full Disclosure</a>
+            listed below. <a href="#">Full Disclosure</a>
           </p>
 
           <img src="imgs/default.png" alt="" />
