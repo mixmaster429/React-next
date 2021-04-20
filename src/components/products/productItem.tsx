@@ -15,7 +15,7 @@ export const ProductItem: React.FC<Props> = ({ item, index }) => {
     <div className="product-list">
       <div className="product-image">
         <div className="product-number">#{index + 4}</div>
-        <img src={item.product_image} alt="" />
+        <img src={item.product_image} alt="" className="product-preview" />
       </div>
 
       <div className="product-detail">

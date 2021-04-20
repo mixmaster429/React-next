@@ -6,4 +6,4 @@ export { Card } from './card';
 export { Cards } from './cards';
 export { Footer } from './footer';
 export { SiteReview } from './siteReview';
-export { ProductItem } from './product';
+export { Products } from './products';

@@ -36,7 +36,7 @@
   }
 
   .site-reviews {
-    padding: 120px 0 70px;
+    padding: 80px 0 70px;
     overflow: hidden;
 
     .slider-element {
@@ -62,7 +62,7 @@
             border-radius: 5px;
 
             &::before {
-              content: "";
+              content: '';
             }
           }
         }
@@ -75,6 +75,7 @@
       display: flex;
       justify-content: space-between;
       padding: 50px 30px 50px 40px;
+      margin-top: 30px;
       align-items: center;
       box-shadow: 0px 4px 15px rgba(181, 178, 111, 0.3);
       border-top: 4px solid #b5b26f;
@@ -92,7 +93,7 @@
       }
 
       button {
-        font-family: "Montserrat";
+        font-family: 'Montserrat';
         position: absolute;
         bottom: 0;
         right: 0;
@@ -118,7 +119,7 @@
             margin: 0;
             padding: 7px 30px;
             border: none;
-            font-family: "Montserrat";
+            font-family: 'Montserrat';
 
             &.ant-tabs-tab-active {
               background-color: #b5b26f;
@@ -182,10 +183,18 @@
           .product-image {
             position: relative;
 
+            img {
+              &.product-preview {
+                @media (max-width: 1200px) {
+                  width: 300px;
+                }
+              }
+            }
+
             .featured-badge {
               position: absolute;
               color: white;
-              font-family: "Montserrat";
+              font-family: 'Montserrat';
               font-size: 14px;
               font-weight: 600;
               padding: 3px 10px;
@@ -224,7 +233,7 @@
               line-height: 35px;
               font-size: 14px;
               font-weight: 700;
-              font-family: "Montserrat";
+              font-family: 'Montserrat';
             }
           }
 
@@ -278,7 +287,7 @@
                 margin: 0;
 
                 li {
-                  font-family: "Montserrat";
+                  font-family: 'Montserrat';
                   font-size: 14px;
                   font-weight: 600;
                   margin: 7px 0;
@@ -286,7 +295,7 @@
               }
 
               .show-more {
-                font-family: "Montserrat";
+                font-family: 'Montserrat';
                 font-size: 14px;
                 font-weight: 600;
                 text-decoration: underline;
@@ -297,7 +306,7 @@
                 margin-top: 20px;
 
                 button {
-                  font-family: "Montserrat";
+                  font-family: 'Montserrat';
                   font-weight: 700;
 
                   &:first-child {
@@ -371,7 +380,6 @@
           right: -200px;
         }
       }
-
     }
   }
 }
