@@ -7,14 +7,14 @@ type Props = {
     product_image?: string;
     company_image?: string;
   };
-  key?: string;
+  index?: number;
 };
 
-export const ProductItem: React.FC<Props> = ({ item, key }) => {
+export const ProductItem: React.FC<Props> = ({ item, index }) => {
   return (
     <div className="product-list">
       <div className="product-image">
-        <div className="product-number">#{key}</div>
+        <div className="product-number">#{index + 4}</div>
         <img src={item.product_image} alt="" />
       </div>
 

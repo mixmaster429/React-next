@@ -40,7 +40,7 @@ const Home: React.FC = () => {
 
   const product_list = () => {
     return product_data.map((item, key) => {
-      return <ProductItem item={item} key={key}></ProductItem>;
+      return <ProductItem item={item} index={key} key={key}></ProductItem>;
     });
   };
 
