@@ -16,6 +16,7 @@ Every plugin comes with an example to give you a brief knowledge about their usa
     npm run build
     http-server ./
 ```
+Go to http://localhost:8000/preview/mattress
 
 ### Running the development server.
 
