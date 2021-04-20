@@ -1,10 +1,11 @@
-const withPlugins = require("next-compose-plugins");
-const path = require("path");
+const withPlugins = require('next-compose-plugins');
+const path = require('path');
 
 const config = {
-    sassOptions: {
-        includePaths: [path.join(__dirname, "styles")],
-    },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
+  basePath: '/preview/mattress',
 };
 
 module.exports = withPlugins([], config);

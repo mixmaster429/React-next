@@ -10,6 +10,13 @@ Every plugin comes with an example to give you a brief knowledge about their usa
 
 ## Available Scripts
 
+### Deploy Static Html Files.
+
+```bash
+    npm run build
+    http-server ./
+```
+
 ### Running the development server.
 
 ```bash
