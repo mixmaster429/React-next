@@ -1,6 +1,6 @@
-import React from "react";
-import { Space } from "antd";
-import { Contactus } from "./contactus";
+import React from 'react';
+import { Space } from 'antd';
+import { Contactus } from './contactus';
 
 export const Footer: React.FC = () => {
   return (

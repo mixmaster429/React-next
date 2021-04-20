@@ -6,6 +6,7 @@ const config = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   basePath: '/preview/mattress',
+  assetPrefix: 'http://localhost:8080/preview/mattress',
 };
 
 module.exports = withPlugins([], config);

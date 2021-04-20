@@ -1,4 +1,4 @@
-import { Row, Col, Input, Space, Button } from "antd";
+import { Row, Col, Input, Space, Button } from 'antd';
 
 export const Contactus: React.FC = () => {
   const { TextArea } = Input;
@@ -23,7 +23,7 @@ export const Contactus: React.FC = () => {
 
           <Col xs={18}>
             <p>
-              By pressing the submit button you are accepting our{" "}
+              By pressing the submit button you are accepting our{' '}
               <a href="#">Privacy Policy</a> and our <a href="#">Term of use</a>
             </p>
           </Col>

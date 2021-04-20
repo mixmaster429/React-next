@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer, Header } from '@components';
+import { Footer, Header, ProductItem, SiteReview } from '@components';
 import { Row, Col, Rate, Button, Tabs } from 'antd';
 import { GlobalOutlined, TagOutlined } from '@ant-design/icons';
 import Slider from 'react-slick';
@@ -40,51 +40,7 @@ const Home: React.FC = () => {
 
   const product_list = () => {
     return product_data.map((item, key) => {
-      return (
-        <div className="product-list" key={key}>
-          <div className="product-image">
-            <div className="product-number">#{key + 4}</div>
-            <img src={item.product_image} alt="" />
-          </div>
-
-          <div className="product-detail">
-            <img src={item.company_image} alt="" className="company-logo" />
-            <div className="description">
-              <p className="title">America's Best-Priced Luxury Mattress</p>
-              <p className="sale">Customer Appreciation Sale! - $200 OFF!</p>
-              <p className="product-description">
-                This luxury mattress provides great value for money. The Saatva
-                mattress comes in three different firmness level allowing it to
-                accommodate all preferences. The mattress is built out of
-                premium materials, it arrives uncompressed and ready to use.
-              </p>
-              <span className="product-rating">Rating 9.5</span>
-              <Rate disabled defaultValue={5} />
-            </div>
-
-            <div className="shipping">
-              <ul>
-                <li>Award winning mattress</li>
-                <li>365-Night Home Trial</li>
-                <li>Forever warranty</li>
-                <li>Free shipping</li>
-              </ul>
-              <a href="#" className="show-more">
-                Show more
-              </a>
-
-              <p className="actions">
-                <Button type="ghost" icon={<TagOutlined />}>
-                  SEE DEAL
-                </Button>
-                <Button type="primary" icon={<GlobalOutlined />}>
-                  VISIT WEBSITE
-                </Button>
-              </p>
-            </div>
-          </div>
-        </div>
-      );
+      return <ProductItem item={item} key={key}></ProductItem>;
     });
   };
 
@@ -127,51 +83,15 @@ const Home: React.FC = () => {
           <Col xl={{ span: 20, offset: 2 }}>
             <Row justify="space-between">
               <Col span={7}>
-                <div className="site-review">
-                  <img src="imgs/num1.png" alt="" />
-                  <img src="imgs/site1.png" alt="" />
-
-                  <div className="rating">
-                    <p className="rating-value">Rating 9.9</p>
-                    <Rate disabled defaultValue={5} />
-                  </div>
-
-                  <Button type="primary" icon={<GlobalOutlined />}>
-                    Visit website
-                  </Button>
-                </div>
+                <SiteReview></SiteReview>
               </Col>
 
               <Col span={7}>
-                <div className="site-review">
-                  <img src="imgs/num2.png" alt="" />
-                  <img src="imgs/site2.png" alt="" />
-
-                  <div className="rating">
-                    <p className="rating-value">Rating 9.7</p>
-                    <Rate disabled defaultValue={5} />
-                  </div>
-
-                  <Button type="primary" icon={<GlobalOutlined />}>
-                    Visit website
-                  </Button>
-                </div>
+                <SiteReview></SiteReview>
               </Col>
 
               <Col span={7}>
-                <div className="site-review">
-                  <img src="imgs/num3.png" alt="" />
-                  <img src="imgs/site3.png" alt="" />
-
-                  <div className="rating">
-                    <p className="rating-value">Rating 9.5</p>
-                    <Rate disabled defaultValue={5} />
-                  </div>
-
-                  <Button type="primary" icon={<GlobalOutlined />}>
-                    Visit website
-                  </Button>
-                </div>
+                <SiteReview></SiteReview>
               </Col>
             </Row>
           </Col>
@@ -480,79 +400,19 @@ const Home: React.FC = () => {
       <section className="site-reviews">
         <Slider {...settings}>
           <div>
-            <div className="site-review">
-              <img src="imgs/num1.png" alt="" />
-              <img src="imgs/site1.png" alt="" />
-
-              <div className="rating">
-                <p className="rating-value">Rating 9.9</p>
-                <Rate disabled defaultValue={5} />
-              </div>
-
-              <Button type="primary" icon={<GlobalOutlined />}>
-                Visit website
-              </Button>
-            </div>
+            <SiteReview></SiteReview>
           </div>
           <div>
-            <div className="site-review">
-              <img src="imgs/num1.png" alt="" />
-              <img src="imgs/site1.png" alt="" />
-
-              <div className="rating">
-                <p className="rating-value">Rating 9.9</p>
-                <Rate disabled defaultValue={5} />
-              </div>
-
-              <Button type="primary" icon={<GlobalOutlined />}>
-                Visit website
-              </Button>
-            </div>
+            <SiteReview></SiteReview>
           </div>
           <div>
-            <div className="site-review">
-              <img src="imgs/num1.png" alt="" />
-              <img src="imgs/site1.png" alt="" />
-
-              <div className="rating">
-                <p className="rating-value">Rating 9.9</p>
-                <Rate disabled defaultValue={5} />
-              </div>
-
-              <Button type="primary" icon={<GlobalOutlined />}>
-                Visit website
-              </Button>
-            </div>
+            <SiteReview></SiteReview>
           </div>
           <div>
-            <div className="site-review">
-              <img src="imgs/num1.png" alt="" />
-              <img src="imgs/site1.png" alt="" />
-
-              <div className="rating">
-                <p className="rating-value">Rating 9.9</p>
-                <Rate disabled defaultValue={5} />
-              </div>
-
-              <Button type="primary" icon={<GlobalOutlined />}>
-                Visit website
-              </Button>
-            </div>
+            <SiteReview></SiteReview>
           </div>
           <div>
-            <div className="site-review">
-              <img src="imgs/num1.png" alt="" />
-              <img src="imgs/site1.png" alt="" />
-
-              <div className="rating">
-                <p className="rating-value">Rating 9.9</p>
-                <Rate disabled defaultValue={5} />
-              </div>
-
-              <Button type="primary" icon={<GlobalOutlined />}>
-                Visit website
-              </Button>
-            </div>
+            <SiteReview></SiteReview>
           </div>
         </Slider>
       </section>
