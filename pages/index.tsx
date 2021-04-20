@@ -17,6 +17,15 @@ const Home: React.FC = () => {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -53,15 +62,30 @@ const Home: React.FC = () => {
         <Row>
           <Col span={24}>
             <Row justify="space-around">
-              <Col xl={{ span: 7 }} lg={{ span: 16 }} md={{ span: 16 }}>
+              <Col
+                span={23}
+                xl={{ span: 6 }}
+                lg={{ span: 16 }}
+                md={{ span: 16 }}
+              >
                 <SiteReview></SiteReview>
               </Col>
 
-              <Col xl={{ span: 7 }} lg={{ span: 16 }} md={{ span: 16 }}>
+              <Col
+                span={23}
+                xl={{ span: 6 }}
+                lg={{ span: 16 }}
+                md={{ span: 16 }}
+              >
                 <SiteReview></SiteReview>
               </Col>
 
-              <Col xl={{ span: 7 }} lg={{ span: 16 }} md={{ span: 16 }}>
+              <Col
+                span={23}
+                xl={{ span: 6 }}
+                lg={{ span: 16 }}
+                md={{ span: 16 }}
+              >
                 <SiteReview></SiteReview>
               </Col>
             </Row>

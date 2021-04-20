@@ -10,25 +10,23 @@ export const Contactus: React.FC = () => {
 
       <div className="contact-form">
         <Row justify="space-around">
-          <Col xs={6}>
-            <Space direction="vertical" size="large">
-              <Input placeholder="Your Name" />
-              <Input placeholder="Your Email" />
-            </Space>
+          <Col span={22} sm={6} className="contact-info">
+            <Input placeholder="Your Name" />
+            <Input placeholder="Your Email" />
           </Col>
 
-          <Col xs={16}>
+          <Col span={22} sm={16}>
             <TextArea rows={4} placeholder="Your Message" />
           </Col>
 
-          <Col xs={18}>
+          <Col span={22} lg={18}>
             <p>
               By pressing the submit button you are accepting our{' '}
               <a href="#">Privacy Policy</a> and our <a href="#">Term of use</a>
             </p>
           </Col>
 
-          <Col xs={4} className="submit">
+          <Col span={22} lg={4} className="submit">
             <Button className="btn-large">SEND A MESSAGE</Button>
           </Col>
         </Row>
