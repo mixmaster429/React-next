@@ -1,40 +1,40 @@
-import React from "react";
-import { Footer, Header } from "@components";
-import { Row, Col, Rate, Button, Tabs } from "antd";
-import { GlobalOutlined, TagOutlined } from "@ant-design/icons";
-import Slider from "react-slick";
+import React from 'react';
+import { Footer, Header } from '@components';
+import { Row, Col, Rate, Button, Tabs } from 'antd';
+import { GlobalOutlined, TagOutlined } from '@ant-design/icons';
+import Slider from 'react-slick';
 
 const Home: React.FC = () => {
   const { TabPane } = Tabs;
 
   const product_data = [
     {
-      product_image: "imgs/product4.png",
-      company_image: "imgs/comp4.png",
+      product_image: 'imgs/product4.png',
+      company_image: 'imgs/comp4.png',
     },
     {
-      product_image: "imgs/product5.png",
-      company_image: "imgs/comp5.png",
+      product_image: 'imgs/product5.png',
+      company_image: 'imgs/comp5.png',
     },
     {
-      product_image: "imgs/product6.png",
-      company_image: "imgs/comp6.png",
+      product_image: 'imgs/product6.png',
+      company_image: 'imgs/comp6.png',
     },
     {
-      product_image: "imgs/product7.png",
-      company_image: "imgs/comp7.png",
+      product_image: 'imgs/product7.png',
+      company_image: 'imgs/comp7.png',
     },
     {
-      product_image: "imgs/product8.png",
-      company_image: "imgs/comp8.png",
+      product_image: 'imgs/product8.png',
+      company_image: 'imgs/comp8.png',
     },
     {
-      product_image: "imgs/product9.png",
-      company_image: "imgs/comp9.png",
+      product_image: 'imgs/product9.png',
+      company_image: 'imgs/comp9.png',
     },
     {
-      product_image: "imgs/product10.png",
-      company_image: "imgs/comp10.png",
+      product_image: 'imgs/product10.png',
+      company_image: 'imgs/comp10.png',
     },
   ];
 
@@ -94,7 +94,7 @@ const Home: React.FC = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    className: "slider-element",
+    className: 'slider-element',
   };
 
   return (
