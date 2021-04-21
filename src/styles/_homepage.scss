@@ -238,6 +238,7 @@
 
             img {
               &.product-preview {
+                width: 340px;
                 @media (max-width: 1200px) {
                   width: 300px;
                 }
