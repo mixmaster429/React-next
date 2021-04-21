@@ -2,6 +2,8 @@ import { Button, Col, Row } from 'antd';
 import React from 'react';
 import { CheckOutlined, FlagFilled, GlobalOutlined } from '@ant-design/icons';
 import { Rating } from '@components/rating';
+import Slider from 'react-slick';
+import { PriceCard } from '@components/pricing';
 
 const Main: React.FC = () => {
   const icon_style = {
@@ -10,11 +12,96 @@ const Main: React.FC = () => {
     fontSize: 18,
   };
 
-  const rate = {
-    max: 10,
-    rate: 6.9,
-    text: 'asdfasdf',
+  const rates = [
+    {
+      max: 10,
+      rate: 8.5,
+      text: 'Price',
+    },
+    {
+      max: 10,
+      rate: 9.5,
+      text: 'comfort',
+    },
+    {
+      max: 10,
+      rate: 9,
+      text: 'body support',
+    },
+    {
+      max: 10,
+      rate: 9.5,
+      text: 'customer support',
+    },
+  ];
+
+  const slider_setting = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    className: 'slider-element',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   };
+
+  const price_lists = [
+    {
+      price_type: 'Classic Queen',
+      company_logo: 'imgs/comp1.png',
+      price: 1234,
+      color: '#FE6581',
+    },
+    {
+      price_type: 'Classic Queen',
+      company_logo: 'imgs/comp1.png',
+      price: 1234,
+      color: '#00B227',
+    },
+    {
+      price_type: 'Classic Queen',
+      company_logo: 'imgs/comp1.png',
+      price: 1234,
+      color: '#FCDC74',
+    },
+    {
+      price_type: 'Classic Queen',
+      company_logo: 'imgs/comp1.png',
+      price: 1234,
+      color: '#fff000',
+    },
+    {
+      price_type: 'Classic Queen',
+      company_logo: 'imgs/comp1.png',
+      price: 1234,
+      color: '#FE6581',
+    },
+    {
+      price_type: 'Classic Queen',
+      company_logo: 'imgs/comp1.png',
+      price: 1234,
+      color: '#FCDC74',
+    },
+  ];
 
   return (
     <>
@@ -89,18 +176,13 @@ const Main: React.FC = () => {
               <h2>Rating</h2>
 
               <Row>
-                <Col span={12}>
-                  <Rating rate={rate}></Rating>
-                </Col>
-                <Col span={12}>
-                  <Rating rate={rate}></Rating>
-                </Col>
-                <Col span={12}>
-                  <Rating rate={rate}></Rating>
-                </Col>
-                <Col span={12}>
-                  <Rating rate={rate}></Rating>
-                </Col>
+                {rates.map((rate, key) => {
+                  return (
+                    <Col span={12} key={key}>
+                      <Rating rate={rate}></Rating>
+                    </Col>
+                  );
+                })}
               </Row>
 
               <p>
@@ -130,33 +212,49 @@ const Main: React.FC = () => {
                 </p>
 
                 <p>
-                  <strong>Twin:</strong>The twin mattress costs $849. Its
+                  <strong>Twin:</strong> The twin mattress costs $849. Its
                   dimensions are 38 x 75″.
                 </p>
 
                 <p>
-                  <strong>Twin:</strong>The twin mattress costs $849. Its
-                  dimensions are 38 x 75″.
+                  <strong>Twin XL:</strong> The twin XL mattress is priced at
+                  $1,049. Its dimensions are 38 x 80″.
                 </p>
 
                 <p>
-                  <strong>Twin:</strong>The twin mattress costs $849. Its
-                  dimensions are 38 x 75″.
+                  <strong>Full:</strong> The full-sized mattress costs $1,399.
+                  Its dimensions are 54 x 75″.
                 </p>
 
                 <p>
-                  <strong>Twin:</strong>The twin mattress costs $849. Its
-                  dimensions are 38 x 75″.
+                  <strong>Queen:</strong> The queen sized mattress costs $1,499,
+                  and its dimensions are 60 x 80″.
                 </p>
 
                 <p>
-                  <strong>Twin:</strong>The twin mattress costs $849. Its
-                  dimensions are 38 x 75″.
+                  <strong>King:</strong> The king sized mattress price is
+                  $1,899. Its dimensions are 76 x 80″.
                 </p>
 
                 <p>
-                  <strong>Twin:</strong>The twin mattress costs $849. Its
-                  dimensions are 38 x 75″.
+                  <strong>Split King:</strong> The split king measures 76 x 80″
+                  and costs $2,098.
+                </p>
+
+                <p>
+                  <strong>Cal King:</strong> The Cal king mattress costs $1,899.
+                  Its dimensions are 72 x 84″.
+                </p>
+
+                <p>
+                  <strong>Split Cal King:</strong> The split Cal king mattress
+                  costs $2,099 and measures 72 x 84″.
+                </p>
+
+                <p>
+                  Note that prices will vary based on how you customize your
+                  mattress — for example, there is a difference in price between
+                  the 11-inch and 14.5-inch height choice.
                 </p>
               </div>
 
@@ -170,34 +268,58 @@ const Main: React.FC = () => {
                 </p>
 
                 <p>
-                  <strong>Twin:</strong>The twin mattress costs $849. Its
-                  dimensions are 38 x 75″.
+                  <strong>Twin:</strong> The twin measures 38″ x 75″ and costs
+                  $1,099.
                 </p>
 
                 <p>
-                  <strong>Twin:</strong>The twin mattress costs $849. Its
-                  dimensions are 38 x 75″.
+                  <strong>Twin XL:</strong> The twin XL measures 38″ x 80″ and
+                  costs $1,249.
                 </p>
 
                 <p>
-                  <strong>Twin:</strong>The twin mattress costs $849. Its
-                  dimensions are 38 x 75″.
+                  <strong>Full:</strong> The full measures 54″ x 75″ and costs
+                  $1,599.
                 </p>
 
                 <p>
-                  <strong>Twin:</strong>The twin mattress costs $849. Its
-                  dimensions are 38 x 75″.
+                  <strong>Queen:</strong> The queen size measures 60″ x 80″ and
+                  costs $1,799.
                 </p>
 
                 <p>
-                  <strong>Twin:</strong>The twin mattress costs $849. Its
-                  dimensions are 38 x 75″.
+                  <strong>King:</strong> The king size measures 76″ x 80″ and
+                  costs $2,199.
                 </p>
 
                 <p>
-                  <strong>Twin:</strong>The twin mattress costs $849. Its
-                  dimensions are 38 x 75″.
+                  <strong>Cal King:</strong> The Cal king measures 72″ x 84″ and
+                  costs $2,199.
                 </p>
+
+                <p>
+                  <strong>Split King:</strong> The split king measures 76″ x 80″
+                  and costs $2,499.
+                </p>
+
+                <p>
+                  You can also conveniently add a foundation, frame, or
+                  adjustable base to your order as well. Compared to its
+                  counterparts, Saatva offers very reasonable prices for a
+                  luxury mattress.
+                </p>
+              </div>
+
+              <div className="size-cards">
+                <Slider {...slider_setting}>
+                  {price_lists.map((item, key) => {
+                    return (
+                      <div key={key}>
+                        <PriceCard item={item}></PriceCard>
+                      </div>
+                    );
+                  })}
+                </Slider>
               </div>
             </div>
           </Col>

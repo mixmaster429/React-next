@@ -74,29 +74,7 @@
         }
       }
 
-      .slick-dots {
-        li {
-          &.slick-active {
-            width: 60px;
-
-            button {
-              width: 50px;
-              background-color: #b5916f;
-            }
-          }
-
-          button {
-            width: 3px;
-            height: 3px;
-            background-color: lightgray;
-            border-radius: 5px;
-
-            &::before {
-              content: '';
-            }
-          }
-        }
-      }
+      
     }
 
     .site-review {

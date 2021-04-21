@@ -79,6 +79,12 @@
         padding: 20px;
         border: 1px dashed #b5b26f;
 
+        h2 {
+          color: $background-color;
+          font-size: 48px;
+          font-weight: bold;
+        }
+
         .rating {
           padding: 10px;
 
@@ -99,6 +105,7 @@
             text-align: center;
             position: relative;
             margin: 0;
+            text-transform: uppercase;
 
             span {
               background-color: white;
@@ -130,6 +137,35 @@
               z-index: -1;
               border-color: #c4c4c4;
             }
+          }
+        }
+      }
+
+      .size-pricing {
+        color: $main-color;
+
+        h2 {
+          font-size: 100px;
+          font-weight: bold;
+          color: $light-background;
+          -webkit-text-stroke: 1px $background-color;
+          text-align: center;
+        }
+
+        h3 {
+          font-size: 24px;
+          font-weight: bold;
+          color: $main-color;
+        }
+
+        .size-cards {
+          margin-top: 70px;
+
+          .size-card {
+            background-color: $light-background;
+            margin: 0 20px;
+            text-align: center;
+            border-top: 3px solid;
           }
         }
       }
