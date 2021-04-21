@@ -1,5 +1,89 @@
 .review-page {
   .section-header {
-    background-color: #1449BB;
+    background-color: #1449bb;
+    padding: 30px 0;
+
+    .title {
+      font-size: 48px;
+      font-weight: 700;
+      color: white;
+      margin: 0;
+    }
+
+    .sub-title {
+      color: $star-yellow;
+      font-weight: 600;
+    }
+
+    .review-lists {
+      padding: 0;
+      list-style: none;
+
+      li {
+        padding: 10px 0;
+        border-top: 1px dashed #cfcfd1;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+
+        &:last-of-type {
+          border-bottom: 1px dashed #cfcfd1;
+        }
+      }
+    }
+
+    .right-side {
+      padding: 20px;
+
+      .company-logo {
+        position: relative;
+        padding: 10px;
+        max-width: 400px;
+
+        .background {
+          width: 100%;
+        }
+
+        .company-avatar {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(calc(-50% - 5px), -50%);
+        }
+      }
+
+      .buttons {
+        button {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .button-tabs {
+    padding: 15px;
+    border-bottom: 3px solid rgba(181, 178, 111, 0.15);
+
+    button {
+      margin-right: 20px;
+    }
+  }
+
+  .rating-section {
+    .rating-details {
+      padding: 50px;
+
+      .rating-chart {
+        padding: 20px;
+        border: 1px dashed #b5b26f;
+      }
+    }
+
+    .reviews {
+      padding: 50px;
+      background-color: $light-background;
+    }
   }
 }

@@ -7,6 +7,7 @@ $background-color: #b5b26f;
 $light-background: #f8f7f1;
 $main-color: #454545;
 $primary-color: #1449bb;
+$star-yellow: #f2c94c;
 
 body {
   background-color: white;
@@ -28,14 +29,30 @@ textarea {
   padding: 7px 20px !important;
 }
 
+.ant-btn {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+
+  img {
+    margin-left: 10px;
+  }
+
+  &.secondary {
+    border-color: $star-yellow;
+    background-color: $star-yellow;
+  }
+}
+
 .btn-large {
   padding: 10px 20px;
   line-height: unset;
   height: unset;
   font-size: 12px;
-  font-weight: 'Montserrat';
   border: none;
-  background-color: #f2c94c;
+  background-color: $star-yellow;
   color: $main-color;
 }
 
