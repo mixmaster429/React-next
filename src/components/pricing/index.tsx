@@ -18,9 +18,11 @@ export const PriceCard: React.FC<Prop> = ({ item }) => {
       <div className="company-logo">
         <img src={item.company_logo} alt="" />
       </div>
-      <p className="price">${item.price}</p>
+      <p className="price">${item.price.toLocaleString()}</p>
       <p className="description">FREE delivery & 180-night trial</p>
-      <Button icon={<GlobalOutlined />}>visit website</Button>
+      <Button type="primary" icon={<GlobalOutlined />}>
+        visit website
+      </Button>
     </div>
   );
 };
