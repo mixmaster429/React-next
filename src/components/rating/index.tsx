@@ -17,7 +17,7 @@ export const Rating: React.FC<Prop> = ({ rate }) => {
           style={{ width: (rate.rate * 100) / rate.max + '%' }}
         ></div>
       </div>
-      <p className="rating-value">
+      <div className="rating-value">
         <hr />
         <div className="bar left"></div>
         <div className="bar right"></div>
@@ -27,7 +27,7 @@ export const Rating: React.FC<Prop> = ({ rate }) => {
             {rate.rate}/{rate.max}
           </strong>
         </span>
-      </p>
+      </div>
     </div>
   );
 };

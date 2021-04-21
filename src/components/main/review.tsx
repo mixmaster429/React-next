@@ -525,46 +525,43 @@ const Main: React.FC = () => {
 
                 <p>
                   <strong>Adjustable Bed Prices</strong>
-
-                  <ul>
-                    <li>
-                      The Twin adjustable bed measures 38” x 75” and costs
-                      $1,199.
-                    </li>
-                    <li>
-                      The Twin XL adjustable bed measures 38” x 80” and costs
-                      $1,249.
-                    </li>
-                    <li>
-                      The Full adjustable bed measures 54” x 75” and costs
-                      $1,299.
-                    </li>
-                    <li>
-                      The Queen adjustable bed measures 60” x 80” and costs
-                      $1,399.
-                    </li>
-                    <li>
-                      The Split Queen adjustable bed measures 60” x 80” (2
-                      pieces) and costs $2,398.
-                    </li>
-                    <li>
-                      The King adjustable bed measures 76” x 80” and costs
-                      $2,498.
-                    </li>
-                    <li>
-                      The Split King adjustable bed measures 76” x 80” (2
-                      pieces) and costs $2,498.
-                    </li>
-                    <li>
-                      The Cal King adjustable bed measures 72” x 84” and costs
-                      $2,498.
-                    </li>
-                    <li>
-                      The Split Cal King adjustable bed measures 72” x 84” and
-                      costs $2,498.
-                    </li>
-                  </ul>
                 </p>
+
+                <ul>
+                  <li>
+                    The Twin adjustable bed measures 38” x 75” and costs $1,199.
+                  </li>
+                  <li>
+                    The Twin XL adjustable bed measures 38” x 80” and costs
+                    $1,249.
+                  </li>
+                  <li>
+                    The Full adjustable bed measures 54” x 75” and costs $1,299.
+                  </li>
+                  <li>
+                    The Queen adjustable bed measures 60” x 80” and costs
+                    $1,399.
+                  </li>
+                  <li>
+                    The Split Queen adjustable bed measures 60” x 80” (2 pieces)
+                    and costs $2,398.
+                  </li>
+                  <li>
+                    The King adjustable bed measures 76” x 80” and costs $2,498.
+                  </li>
+                  <li>
+                    The Split King adjustable bed measures 76” x 80” (2 pieces)
+                    and costs $2,498.
+                  </li>
+                  <li>
+                    The Cal King adjustable bed measures 72” x 84” and costs
+                    $2,498.
+                  </li>
+                  <li>
+                    The Split Cal King adjustable bed measures 72” x 84” and
+                    costs $2,498.
+                  </li>
+                </ul>
               </div>
 
               <div>
