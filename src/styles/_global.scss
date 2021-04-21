@@ -1,7 +1,12 @@
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url(./Montserrat-Regular.ttf);
 }
+
+$background-color: #b5b26f;
+$light-background: #f8f7f1;
+$main-color: #454545;
+$primary-color: #1449bb;
 
 body {
   background-color: white;
@@ -14,11 +19,12 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
-input, textarea {
-  font-family: "Montserrat";
+input,
+textarea {
+  font-family: 'Montserrat';
   padding: 7px 20px !important;
 }
 
@@ -27,18 +33,18 @@ input, textarea {
   line-height: unset;
   height: unset;
   font-size: 12px;
-  font-weight: "Montserrat";
+  font-weight: 'Montserrat';
   border: none;
-  background-color: #F2C94C;
-  color: #454545;
+  background-color: #f2c94c;
+  color: $main-color;
 }
 
 .ant-btn-primary {
-  background-color: #1449bb;
+  background-color: $primary-color;
   border: none;
 
   &:hover {
-    background-color: #1449bb;
+    background-color: $primary-color;
     color: white;
   }
 }
