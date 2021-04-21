@@ -1,12 +1,19 @@
 import { Button, Col, Row } from 'antd';
 import React from 'react';
 import { CheckOutlined, FlagFilled, GlobalOutlined } from '@ant-design/icons';
+import { Rating } from '@components/rating';
 
 const Main: React.FC = () => {
   const icon_style = {
     color: '#B5916F',
     marginRight: 10,
     fontSize: 18,
+  };
+
+  const rate = {
+    max: 10,
+    rate: 6.9,
+    text: 'asdfasdf',
   };
 
   return (
@@ -80,6 +87,21 @@ const Main: React.FC = () => {
           <Col span={15} className="rating-details">
             <div className="rating-chart">
               <h2>Rating</h2>
+
+              <Row>
+                <Col span={12}>
+                  <Rating rate={rate}></Rating>
+                </Col>
+                <Col span={12}>
+                  <Rating rate={rate}></Rating>
+                </Col>
+                <Col span={12}>
+                  <Rating rate={rate}></Rating>
+                </Col>
+                <Col span={12}>
+                  <Rating rate={rate}></Rating>
+                </Col>
+              </Row>
 
               <p>
                 Saatva is an online mattress retailer offering their Saatva
