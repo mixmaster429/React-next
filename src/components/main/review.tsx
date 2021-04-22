@@ -1,12 +1,17 @@
 import React from 'react';
-import { Button, Col, Row } from 'antd';
+import { Button, Col, Input, Row } from 'antd';
 import { CheckOutlined, FlagFilled, GlobalOutlined } from '@ant-design/icons';
 import Image from 'next/image';
 import Slider from 'react-slick';
 import { Rating } from '@components/rating';
 import { PriceCard } from '@components/pricing';
+import { Faq } from '@components/Faq';
 
 const Main: React.FC = () => {
+  const { TextArea } = Input;
+
+  const price = 1299;
+
   const icon_style = {
     color: '#B5916F',
     marginRight: 10,
@@ -195,7 +200,11 @@ const Main: React.FC = () => {
       </section>
 
       <section className="button-tabs">
-        <Button ghost style={{ color: '#454545', borderColor: '#B5B26F' }}>
+        <Button
+          ghost
+          style={{ color: '#454545', borderColor: '#B5B26F' }}
+          className="active"
+        >
           Expert view
         </Button>
         <Button ghost style={{ color: '#454545', borderColor: '#B5B26F' }}>
@@ -682,9 +691,159 @@ const Main: React.FC = () => {
                   </Row>
                 </div>
               </div>
+
+              <div>
+                <h3>Final Word</h3>
+
+                <p>
+                  Saatva Classic allows you to choose from 3 different firmness
+                  levels depending on your needs so you can purchase the best
+                  mattress for your sleep health. Saatva Latex Hybrid gives you
+                  all the benefits of a hybrid with the addition of premium
+                  Talalay latex. For the high quality and numerous features
+                  offered by Saatva mattresses, the prices are certainly
+                  reasonable. The 180 night trial period is quite generous and
+                  the fact that the mattresses are hand-delivered and set up for
+                  free in your home is an amazing bonus.
+                </p>
+
+                <div className="about">
+                  <div className="company-logo">
+                    <img src="imgs/comp1.png" alt="" className="logo" />
+
+                    <div>
+                      <Button type="primary" icon={<GlobalOutlined />}>
+                        visit website
+                      </Button>
+                      <Button className="secondary">
+                        Visit saatva mattress{' '}
+                        <img src="imgs/right-arrow.png" alt="" />
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="disclosure">
+                  <p className="title">Disclosure</p>
+
+                  <Row>
+                    <Col span={12} className="column">
+                      <p>
+                        This website is an informative comparison site that aims
+                        to offer its users find helpful information regarding
+                        the products and offers that will be suitable for their
+                        needs. We are able to maintain a free, high-quality
+                        service by receiving advertising fees from the brands
+                        and service providers we review on this website. These
+                        advertising fees, combined with our criteria and
+                        methodology, such as the conversion rates, our team of
+                        reviewer's finding and subjective experience and product
+                        popularity, impact the placement and position of the
+                        brands within the comparison table.
+                      </p>
+                    </Col>
+                    <Col span={12} className="column">
+                      <p>
+                        In the event rating or scoring are assigned by us, they
+                        are based on the position in the comparison table. See
+                        our <a href="#">How we Rate</a> page and{' '}
+                        <a href="#">Terms of Use</a> for information. The
+                        reviews, rating and scoring are provided “as-is” without
+                        guaranties or warranties regarding the information
+                        contained in our website, which shall not be considered
+                        as endorsement. We make the best efforts to keep the
+                        information up-to-date, however, an offer’s terms might
+                        change at any time. We do not compare or include all
+                        service providers, brands and offers available in the
+                        market.
+                      </p>
+                    </Col>
+                  </Row>
+                </div>
+
+                <div className="customer-review">
+                  <div className="content">
+                    <p>
+                      Jodi King has been an interior decorator for many years
+                      specializing in bedroom décor and design. She has been
+                      researching mattresses and matching the correct mattress
+                      for her customers’ needs for years. She has a lot of
+                      knowledge when it comes to looking for the perfect
+                      mattress and is a contributor to Top 5 Mattresses.
+                    </p>
+
+                    <div className="customer-detail">
+                      <img src="imgs/avatar1.png" alt="" />
+
+                      <div className="user-info">
+                        <p className="username">Cameron Williamson</p>
+                        <p className="usertype">AUTHOR</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="comment-box">
+                  <p className="title">Leave a comment</p>
+                  <p>
+                    Join the discussion by writing a question or comment in the
+                    form below.
+                  </p>
+
+                  <div className="comment-form">
+                    <Row justify="center">
+                      <Col span={11}>
+                        <Input placeholder="Your Name" />
+                      </Col>
+                      <Col span={11} offset={1}>
+                        <Input placeholder="Your Email" />
+                      </Col>
+                      <Col span={23}>
+                        <TextArea rows={4} placeholder="Your Message" />
+                      </Col>
+
+                      <Col span={23}>
+                        <div className="form-bottom">
+                          <p>
+                            Your information will be handled as detailed in our{' '}
+                            <a href="#">Privacy Policy</a>
+                          </p>
+
+                          <Button className="secondary">submit comment</Button>
+                        </div>
+                      </Col>
+                    </Row>
+                  </div>
+                </div>
+
+                <div className="faqs">
+                  <p className="title">Question & answers</p>
+
+                  <Faq></Faq>
+
+                  <div
+                    className="read-more"
+                    style={{ textAlign: 'center', marginTop: 50 }}
+                  >
+                    <Button className="show-more">SHOW MORE COMMENTS</Button>
+                  </div>
+                </div>
+              </div>
             </div>
           </Col>
-          <Col span={10} className="reviews"></Col>
+          <Col span={10} className="reviews">
+            <div className="website">
+              <img src="imgs/comp1.png" alt="" />
+              <div className="details">
+                <p>${price.toLocaleString()}</p>
+                <p>Free delivery & 180-night trial</p>
+              </div>
+
+              <Button icon={<GlobalOutlined />} type="primary">
+                VISIT WEBSITE
+              </Button>
+            </div>
+          </Col>
         </Row>
       </section>
     </>

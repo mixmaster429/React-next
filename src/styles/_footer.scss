@@ -1,6 +1,6 @@
 footer {
   .contact-us {
-    background-color: #b5916f;
+    background-color: $lightbrown;
     padding: 70px 0 100px;
     text-align: center;
 
@@ -9,6 +9,7 @@ footer {
     }
 
     .title {
+      font-family: "Montserrat-Bold";
       font-size: 96px;
       color: transparent;
       margin: 0;

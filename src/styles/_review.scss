@@ -63,23 +63,31 @@
   }
 
   .button-tabs {
-    padding: 15px;
+    padding: 15px 100px;
     border-bottom: 3px solid rgba(181, 178, 111, 0.15);
 
     button {
       margin-right: 20px;
+
+      &.active {
+        background-color: $background-color !important;
+        color: white !important;
+      }
     }
   }
 
   .rating-section {
+    padding-bottom: 60px;
+
     .rating-details {
-      padding: 50px 100px;
+      padding: 50px 100px 10px;
 
       .rating-chart {
         padding: 20px;
         border: 1px dashed #b5b26f;
 
         h2 {
+          font-family: "Montserrat-Bold";
           color: $background-color;
           font-size: 48px;
           font-weight: bold;
@@ -143,8 +151,10 @@
 
       .size-pricing {
         color: $main-color;
+        margin-top: 50px;
 
         h2 {
+          font-family: "Montserrat-Bold";
           font-size: 100px;
           color: $light-background;
           -webkit-text-stroke: 0.1rem $background-color;
@@ -202,7 +212,7 @@
         }
 
         .support-types {
-          margin-top: 50px;
+          margin: 50px 0;
 
           .support-card {
             min-height: 228px;
@@ -227,12 +237,223 @@
             }
           }
         }
+
+        .about {
+          margin-top: 100px;
+
+          .company-logo {
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+
+            .logo {
+              margin-bottom: 50px;
+              min-width: 300px;
+            }
+
+            button {
+              margin: 0 5px;
+            }
+          }
+        }
+
+        .disclosure {
+          background-color: $lightbrown;
+          margin-top: 50px;
+          padding: 70px 50px;
+
+          .title {
+            font-family: "Montserrat-Bold";
+            font-size: 48px;
+            color: transparent;
+            -webkit-text-stroke: 0.05rem white;
+            text-align: center;
+          }
+
+          .column {
+            padding: 0 30px;
+            color: white;
+          }
+        }
+
+        .customer-review {
+          margin-top: 70px;
+          background-color: rgba(242, 201, 76, 0.15);
+          border-left: 3px solid $star-yellow;
+          padding-left: 30px;
+
+          .content {
+            background-color: white;
+            padding: 30px;
+
+            .customer-detail {
+              display: flex;
+              align-items: center;
+
+              .user-info {
+                margin-left: 10px;
+
+                p {
+                  margin: 0;
+
+                  &.username {
+                    font-size: 16px;
+                    font-weight: bold;
+                  }
+
+                  &.usertype {
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $background-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .comment-box {
+          background-color: $background-color;
+          margin-top: 70px;
+          padding: 70px;
+          color: white;
+          text-align: center;
+          position: relative;
+
+          &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            border-right: 30px solid transparent;
+            border-top: 30px solid $background-color;
+            transform: translate(0, 100%);
+          }
+
+          .title {
+            font-family: "Montserrat-Bold";
+            font-size: 48px;
+            color: transparent;
+            text-align: center;
+            -webkit-text-stroke: 0.05rem white;
+            margin: 0;
+          }
+
+          p {
+            font-size: 16px;
+          }
+
+          .comment-form {
+            input {
+              margin: 10px 0;
+            }
+
+            textarea {
+              margin: 10px 0;
+            }
+
+            .form-bottom {
+              margin-top: 20px;
+              display: flex;
+              justify-content: space-between;
+
+              p {
+                margin: 0;
+              }
+            }
+          }
+        }
+
+        .faqs {
+          margin-top: 100px;
+
+          .title {
+            font-family: 'Montserrat-Bold';
+            text-transform: uppercase;
+            -webkit-text-stroke: 0.05rem $background-color;
+            color: transparent;
+            font-size: 48px;
+          }
+
+          .faq {
+            background-color: #fdf7e4;
+            padding: 30px;
+            max-width: 700px;
+            position: relative;
+            margin-top: 50px;
+
+            &.sub-comment {
+              margin-left: 50px;
+            }
+
+            &::after {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              content: '';
+              border-right: 30px solid transparent;
+              border-top: 30px solid #fdf7e4;
+              transform: translate(0, 100%);
+            }
+
+            .label {
+              font-weight: bold;
+              min-width: 100px;
+            }
+
+            .question,
+            .answer {
+              display: flex;
+              margin-bottom: 20px;
+
+              .content {
+                p {
+                  margin: 0;
+                }
+              }
+            }
+
+            .answer {
+              .label {
+                padding-top: 20px;
+              }
+
+              .content {
+                padding-top: 20px;
+                border-top: 1px solid rgba(181, 178, 111, 0.5);
+              }
+            }
+
+            .author {
+              font-family: 'Montserrat-SemiBold';
+              color: $lightbrown;
+            }
+
+            .action {
+              font-family: 'Montserrat-SemiBold';
+            }
+          }
+
+          .show-more {
+            border-color: $primary-color;
+            color: $primary-color;
+            padding: 25px 30px;
+            font-size: 12px;
+            font-family: 'Montserrat-Bold';
+          }
+        }
       }
     }
 
     .reviews {
       padding: 50px;
       background-color: $light-background;
+
+      .website {
+        text-align: center;
+        border-top: 3px solid $background-color;
+      }
     }
   }
 }
