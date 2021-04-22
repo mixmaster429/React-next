@@ -180,7 +180,7 @@ const Main: React.FC = () => {
             <p className="title">Saatva Mattress Review</p>
 
             <p className="sub-title">
-              <FlagFilled style={icon_style} />
+              <FlagFilled style={{ ...icon_style, color: '#1449BB' }} />
               Not a bed In a box, arrives uncompressed
             </p>
 
@@ -212,7 +212,7 @@ const Main: React.FC = () => {
             </div>
 
             <div className="buttons">
-              <Button ghost icon={<GlobalOutlined />} className="secondary">
+              <Button icon={<GlobalOutlined />} type="primary">
                 visit website
               </Button>
               <Button className="secondary">
@@ -882,6 +882,7 @@ const Main: React.FC = () => {
 
             <div className="leave-feedback">
               <div className="content">
+                <img src="imgs/star.png" alt="" className="star" />
                 <h3 className="title">Share your opinion about</h3>
                 <p className="company-title">Saatva</p>
 
