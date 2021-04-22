@@ -874,6 +874,21 @@ const Main: React.FC = () => {
               {top_products.map((item, key) => {
                 return <TopProduct key={key} item={item}></TopProduct>;
               })}
+
+              <div className="see-all">
+                <Button className="see-all">SEE ALL</Button>
+              </div>
+            </div>
+
+            <div className="leave-feedback">
+              <div className="content">
+                <h3 className="title">Share your opinion about</h3>
+                <p className="company-title">Saatva</p>
+
+                <Button>
+                  LEAVE YOUR FEEDBACK <img src="imgs/right-arrow.png" alt="" />{' '}
+                </Button>
+              </div>
             </div>
           </Col>
         </Row>
