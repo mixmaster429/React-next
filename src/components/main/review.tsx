@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Col, Input, Row } from 'antd';
 import { CheckOutlined, FlagFilled, GlobalOutlined } from '@ant-design/icons';
-import Image from 'next/image';
 import Slider from 'react-slick';
 import { Rating } from '@components/rating';
 import { PriceCard } from '@components/pricing';
@@ -700,12 +699,7 @@ const Main: React.FC = () => {
                       return (
                         <Col span="8" key={key}>
                           <div className="support-card">
-                            <Image
-                              src={item.icon}
-                              alt="customer support icon"
-                              width={48}
-                              height={48}
-                            />
+                            <img src={item.icon} alt="customer support icon" />
                             <p className="title">{item.title}</p>
                             <p>{item.text}</p>
                           </div>
