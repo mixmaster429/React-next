@@ -73,7 +73,7 @@
 
   .rating-section {
     .rating-details {
-      padding: 50px 70px;
+      padding: 50px 100px;
 
       .rating-chart {
         padding: 20px;
@@ -197,6 +197,33 @@
               max-width: 110px;
               margin: 20px auto;
               font-size: 14px;
+            }
+          }
+        }
+
+        .support-types {
+          margin-top: 50px;
+
+          .support-card {
+            min-height: 228px;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(181, 178, 111, 0.3);
+            margin: 30px 10px 0;
+            padding: 30px 10px 20px;
+            border-top: 3px solid $background-color;
+
+            p {
+              margin: 0 auto;
+              font-size: 14px;
+              max-width: 200px;
+              text-align: center;
+
+              &.title {
+                margin: 20px auto 10px;
+                font-size: 16px;
+                color: $main-color;
+                font-weight: bold;
+              }
             }
           }
         }

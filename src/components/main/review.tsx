@@ -1,8 +1,9 @@
-import { Button, Col, Row } from 'antd';
 import React from 'react';
+import { Button, Col, Row } from 'antd';
 import { CheckOutlined, FlagFilled, GlobalOutlined } from '@ant-design/icons';
-import { Rating } from '@components/rating';
+import Image from 'next/image';
 import Slider from 'react-slick';
+import { Rating } from '@components/rating';
 import { PriceCard } from '@components/pricing';
 
 const Main: React.FC = () => {
@@ -100,6 +101,45 @@ const Main: React.FC = () => {
       company_logo: 'imgs/comp6.png',
       price: 1234,
       color: '#FCDC74',
+    },
+  ];
+
+  const support_types = [
+    {
+      icon: '/imgs/support1.png',
+      title: '24/7 Help & Support',
+      text: 'The company offers 24/7 support.',
+    },
+    {
+      icon: '/imgs/support2.png',
+      title: 'Phone Support',
+      text: 'The company offers 24/7 support via phone.',
+    },
+    {
+      icon: '/imgs/support3.png',
+      title: 'Live Online Chat',
+      text: 'The company officials can be reached via live chat.',
+    },
+    {
+      icon: '/imgs/support4.png',
+      title: 'Email',
+      text: 'The company also offers support via email.',
+    },
+    {
+      icon: '/imgs/support5.png',
+      title: 'Video Tutorials',
+      text:
+        'Some video tutorials are available on the company’s YouTube channel.',
+    },
+    {
+      icon: '/imgs/support6.png',
+      title: 'FAQ',
+      text: 'A FAQ section is present on the company website.',
+    },
+    {
+      icon: '/imgs/support7.png',
+      title: 'BLOG',
+      text: 'The company also maintains a blog.',
     },
   ];
 
@@ -620,6 +660,27 @@ const Main: React.FC = () => {
                   website. If you want visual help, you can find some videos on
                   the company’s YouTube channel.
                 </p>
+
+                <div className="support-types">
+                  <Row justify="center">
+                    {support_types.map((item, key) => {
+                      return (
+                        <Col span="8" key={key}>
+                          <div className="support-card">
+                            <Image
+                              src={item.icon}
+                              alt="customer support icon"
+                              width={48}
+                              height={48}
+                            />
+                            <p className="title">{item.title}</p>
+                            <p>{item.text}</p>
+                          </div>
+                        </Col>
+                      );
+                    })}
+                  </Row>
+                </div>
               </div>
             </div>
           </Col>
