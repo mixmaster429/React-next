@@ -87,7 +87,7 @@
         border: 1px dashed #b5b26f;
 
         h2 {
-          font-family: "Montserrat-Bold";
+          font-family: 'Montserrat-Bold';
           color: $background-color;
           font-size: 48px;
           font-weight: bold;
@@ -154,7 +154,7 @@
         margin-top: 50px;
 
         h2 {
-          font-family: "Montserrat-Bold";
+          font-family: 'Montserrat-Bold';
           font-size: 100px;
           color: $light-background;
           -webkit-text-stroke: 0.1rem $background-color;
@@ -263,7 +263,7 @@
           padding: 70px 50px;
 
           .title {
-            font-family: "Montserrat-Bold";
+            font-family: 'Montserrat-Bold';
             font-size: 48px;
             color: transparent;
             -webkit-text-stroke: 0.05rem white;
@@ -332,7 +332,7 @@
           }
 
           .title {
-            font-family: "Montserrat-Bold";
+            font-family: 'Montserrat-Bold';
             font-size: 48px;
             color: transparent;
             text-align: center;
@@ -447,12 +447,79 @@
     }
 
     .reviews {
-      padding: 50px;
+      padding: 50px 150px;
       background-color: $light-background;
 
       .website {
         text-align: center;
         border-top: 3px solid $background-color;
+        background-color: white;
+        padding: 50px 0 30px;
+
+        .details {
+          margin: 30px 0;
+          background-color: rgba(242, 201, 76, 0.15);
+          display: flex;
+          align-items: center;
+
+          p {
+            width: 50%;
+            text-align: center;
+            padding: 10px 50px;
+            margin: 0;
+            font-family: 'Montserrat-Bold';
+            font-size: 16px;
+
+            &:first-of-type {
+              border-right: 1px solid $lightbrown;
+            }
+          }
+        }
+      }
+
+      .top-products {
+        margin-top: 50px;
+
+        .title {
+          font-family: 'Montserrat-Bold';
+          font-size: 48px;
+          color: $background-color;
+        }
+
+        .top-product {
+          box-shadow: 0px 4px 15px rgba(181, 178, 111, 0.3);
+          margin: 30px 0;
+          border-top: 3px solid $background-color;
+
+          .company-logo {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: white;
+
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          .details {
+            padding: 20px;
+
+            .rate {
+              display: flex;
+
+              .product-rate {
+                .ant-rate-star {
+                  margin-right: 3px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

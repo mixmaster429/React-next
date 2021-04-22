@@ -6,6 +6,7 @@ import Slider from 'react-slick';
 import { Rating } from '@components/rating';
 import { PriceCard } from '@components/pricing';
 import { Faq } from '@components/Faq';
+import { TopProduct } from '@components/products/topProduct';
 
 const Main: React.FC = () => {
   const { TextArea } = Input;
@@ -145,6 +146,29 @@ const Main: React.FC = () => {
       icon: '/imgs/support7.png',
       title: 'BLOG',
       text: 'The company also maintains a blog.',
+    },
+  ];
+
+  const top_products = [
+    {
+      company_logo: 'imgs/comp1.png',
+      rating: 9.5,
+    },
+    {
+      company_logo: 'imgs/comp2.png',
+      rating: 9.1,
+    },
+    {
+      company_logo: 'imgs/comp3.png',
+      rating: 9.2,
+    },
+    {
+      company_logo: 'imgs/comp4.png',
+      rating: 9.3,
+    },
+    {
+      company_logo: 'imgs/comp5.png',
+      rating: 9.4,
     },
   ];
 
@@ -842,6 +866,14 @@ const Main: React.FC = () => {
               <Button icon={<GlobalOutlined />} type="primary">
                 VISIT WEBSITE
               </Button>
+            </div>
+
+            <div className="top-products">
+              <p className="title">Top-5 Mattresses</p>
+
+              {top_products.map((item, key) => {
+                return <TopProduct key={key} item={item}></TopProduct>;
+              })}
             </div>
           </Col>
         </Row>
