@@ -60,11 +60,16 @@ const Home: React.FC = () => {
 
       <section className="site-reviews">
         <Row>
-          <Col span={24}>
+          <Col
+            span={20}
+            offset={2}
+            xl={{ span: 20, offset: 2 }}
+            xxl={{ span: 18, offset: 3 }}
+          >
             <Row justify="space-around">
               <Col
                 span={23}
-                xl={{ span: 6 }}
+                xl={{ span: 7 }}
                 lg={{ span: 16 }}
                 md={{ span: 16 }}
               >
@@ -73,7 +78,7 @@ const Home: React.FC = () => {
 
               <Col
                 span={23}
-                xl={{ span: 6 }}
+                xl={{ span: 7 }}
                 lg={{ span: 16 }}
                 md={{ span: 16 }}
               >
@@ -82,7 +87,7 @@ const Home: React.FC = () => {
 
               <Col
                 span={23}
-                xl={{ span: 6 }}
+                xl={{ span: 7 }}
                 lg={{ span: 16 }}
                 md={{ span: 16 }}
               >
