@@ -71,7 +71,7 @@ export const ProductList: React.FC = () => {
         <p className="section-title">Featured</p>
 
         <Row>
-          <Col span={22} offset={1} xl={{ span: 18, offset: 3 }}>
+          <Col span={22} offset={1} xl={{ span: 16, offset: 4 }}>
             <div className="product-lists">
               {featured_product.map((item, key) => {
                 return (
@@ -88,7 +88,7 @@ export const ProductList: React.FC = () => {
       </div>
 
       <Row>
-        <Col span={22} offset={1} xl={{ span: 18, offset: 3 }}>
+        <Col span={22} offset={1} xl={{ span: 16, offset: 4 }}>
           <div className="product-lists">{product_list()}</div>
         </Col>
       </Row>
