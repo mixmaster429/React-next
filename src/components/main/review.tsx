@@ -175,7 +175,12 @@ const Main: React.FC = () => {
     <>
       <section className="section-header">
         <Row>
-          <Col span={22} xl={{ span: 10, offset: 3 }}>
+          <Col
+            span={20}
+            offset={1}
+            xl={{ span: 10, offset: 3 }}
+            lg={{ span: 9, offset: 1 }}
+          >
             <p className="title">Saatva Mattress Review</p>
 
             <p className="sub-title">
@@ -204,7 +209,13 @@ const Main: React.FC = () => {
               </li>
             </ul>
           </Col>
-          <Col span={22} xl={{ span: 7, offset: 2 }} className="right-side">
+          <Col
+            span={20}
+            offset={1}
+            xl={{ span: 8, offset: 1 }}
+            lg={{ span: 11, offset: 2 }}
+            className="right-side"
+          >
             <div className="company-logo">
               <img src="imgs/back1.png" alt="" className="background" />
               <img src="imgs/comp1.png" alt="" className="company-avatar" />
@@ -243,7 +254,7 @@ const Main: React.FC = () => {
 
       <section className="rating-section">
         <Row>
-          <Col span={14} className="rating-details">
+          <Col span={24} md={{ span: 14 }} className="rating-details">
             <div className="rating-chart">
               <h2>Rating</h2>
 
@@ -697,7 +708,12 @@ const Main: React.FC = () => {
                   <Row justify="center">
                     {support_types.map((item, key) => {
                       return (
-                        <Col span="8" key={key}>
+                        <Col
+                          span="12"
+                          md={{ span: 12 }}
+                          xl={{ span: 8 }}
+                          key={key}
+                        >
                           <div className="support-card">
                             <img src={item.icon} alt="customer support icon" />
                             <p className="title">{item.title}</p>
@@ -745,7 +761,7 @@ const Main: React.FC = () => {
                   <p className="title">Disclosure</p>
 
                   <Row>
-                    <Col span={12} className="column">
+                    <Col span={24} sm={{ span: 12 }} className="column">
                       <p>
                         This website is an informative comparison site that aims
                         to offer its users find helpful information regarding
@@ -760,7 +776,7 @@ const Main: React.FC = () => {
                         brands within the comparison table.
                       </p>
                     </Col>
-                    <Col span={12} className="column">
+                    <Col span={24} sm={{ span: 12 }} className="column">
                       <p>
                         In the event rating or scoring are assigned by us, they
                         are based on the position in the comparison table. See
@@ -849,7 +865,7 @@ const Main: React.FC = () => {
               </div>
             </div>
           </Col>
-          <Col span={10} className="reviews">
+          <Col span={24} md={{ span: 10 }} className="reviews">
             <div className="website">
               <img src="imgs/comp1.png" alt="" />
               <div className="details">

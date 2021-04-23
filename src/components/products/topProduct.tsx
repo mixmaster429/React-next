@@ -13,12 +13,12 @@ export const TopProduct: React.FC<Prop> = ({ item }) => {
   return (
     <div className="top-product">
       <Row>
-        <Col span={12}>
+        <Col span={24} xl={{ span: 12 }}>
           <div className="company-logo">
             <img src={item.company_logo} alt="" />
           </div>
         </Col>
-        <Col span={12}>
+        <Col span={24} xl={{ span: 12 }}>
           <div className="details">
             <div className="rate">
               <div>

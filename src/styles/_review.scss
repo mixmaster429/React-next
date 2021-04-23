@@ -66,6 +66,12 @@
   .button-tabs {
     padding: 15px 100px;
     border-bottom: 3px solid rgba(181, 178, 111, 0.15);
+    overflow: scroll;
+    display: flex;
+
+    @media (max-width: 992px) {
+      padding: 15px 30px;
+    }
 
     button {
       margin-right: 20px;
@@ -82,6 +88,14 @@
 
     .rating-details {
       padding: 50px 100px 10px;
+
+      @media (max-width: 1200px) {
+        padding: 50px 50px 10px;
+      }
+
+      @media (max-width: 425px) {
+        padding: 50px 20px 10px;
+      }
 
       .rating-chart {
         padding: 20px;
@@ -160,6 +174,14 @@
           color: $light-background;
           -webkit-text-stroke: 0.1rem $background-color;
           text-align: center;
+
+          @media (max-width: 1200px) {
+            font-size: 60px;
+          }
+
+          @media (max-width: 992px) {
+            font-size: 48px;
+          }
         }
 
         h3 {
@@ -253,7 +275,7 @@
             }
 
             button {
-              margin: 0 5px;
+              margin: 5px 5px;
             }
           }
         }
@@ -263,17 +285,33 @@
           margin-top: 50px;
           padding: 70px 50px;
 
+          @media (max-width: 1600px) {
+            padding: 50px 20px;
+          }
+
+          @media (max-width: 992px) {
+            padding: 30px 20px;
+          }
+
           .title {
             font-family: 'Montserrat-Bold';
             font-size: 48px;
             color: transparent;
             -webkit-text-stroke: 0.05rem white;
             text-align: center;
+
+            @media (max-width: 992px) {
+              margin-bottom: 20px;
+            }
           }
 
           .column {
             padding: 0 30px;
             color: white;
+
+            @media (max-width: 992px) {
+              padding: 0 10px;
+            }
           }
         }
 
@@ -322,6 +360,10 @@
           text-align: center;
           position: relative;
 
+          @media (max-width: 992px) {
+            padding: 30px;
+          }
+
           &::after {
             position: absolute;
             bottom: 0;
@@ -339,6 +381,10 @@
             text-align: center;
             -webkit-text-stroke: 0.05rem white;
             margin: 0;
+
+            @media (max-width: 992px) {
+              font-size: 30px;
+            }
           }
 
           p {
@@ -359,6 +405,15 @@
               display: flex;
               justify-content: space-between;
 
+              @media (max-width: 1440px) {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                button {
+                  margin-top: 20px;
+                }
+              }
+
               p {
                 margin: 0;
               }
@@ -375,6 +430,10 @@
             -webkit-text-stroke: 0.05rem $background-color;
             color: transparent;
             font-size: 48px;
+
+            @media (max-width: 992px) {
+              font-size: 30px;
+            }
           }
 
           .faq {
@@ -386,6 +445,10 @@
 
             &.sub-comment {
               margin-left: 50px;
+
+              @media (max-width: 375px) {
+                margin-left: 20px;
+              }
             }
 
             &::after {
@@ -451,6 +514,14 @@
       padding: 50px 150px;
       background-color: $light-background;
 
+      @media (max-width: 1600px) {
+        padding: 50px 50px;
+      }
+
+      @media (max-width: 425px) {
+        padding: 50px 20px;
+      }
+
       .website {
         text-align: center;
         border-top: 3px solid $background-color;
@@ -471,6 +542,10 @@
             font-family: 'Montserrat-Bold';
             font-size: 16px;
 
+            @media (max-width: 1200px) {
+              padding: 10px;
+            }
+
             &:first-of-type {
               border-right: 1px solid $lightbrown;
             }
@@ -485,6 +560,10 @@
           font-family: 'Montserrat-Bold';
           font-size: 48px;
           color: $background-color;
+
+          @media (max-width: 1200px) {
+            font-size: 36px;
+          }
         }
 
         .top-product {
@@ -500,10 +579,14 @@
             background-color: white;
 
             img {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
+              position: relative;
+
+              @media (min-width: 1200px) {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
             }
           }
 
@@ -512,6 +595,7 @@
 
             .rate {
               display: flex;
+              justify-content: center;
 
               .product-rate {
                 .ant-rate-star {
@@ -553,6 +637,16 @@
         margin: 50px -150px 0;
         padding: 50px 150px;
         background-color: rgba(181, 178, 111, 0.15);
+
+        @media (max-width: 1600px) {
+          margin: 50px -50px 0;
+          padding: 50px;
+        }
+
+        @media (max-width: 1600px) {
+          margin: 50px -20px 0;
+          padding: 50px;
+        }
 
         .content {
           background-color: #1449bb;
