@@ -4,7 +4,12 @@
 
   .section-header {
     background-color: #1449bb;
-    background-image: url('../../public/imgs/back2.png');
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.9) 25.71%,
+        rgba(255, 255, 255, 0.8) 96.83%
+      ),
+      url('../../public/imgs/review_header_image.png');
     background-size: cover;
     padding: 30px 0;
     color: white;
@@ -13,10 +18,11 @@
       font-size: 48px;
       font-weight: 700;
       margin: 0;
+      color: $main-color;
     }
 
     .sub-title {
-      color: $star-yellow;
+      color: $primary-color;
       font-weight: 600;
     }
 
@@ -31,6 +37,7 @@
         font-weight: 600;
         display: flex;
         align-items: center;
+        color: $main-color;
 
         &:last-of-type {
           border-bottom: 1px dashed #cfcfd1;

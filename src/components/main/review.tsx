@@ -184,7 +184,7 @@ const Main: React.FC = () => {
             <p className="title">Saatva Mattress Review</p>
 
             <p className="sub-title">
-              <FlagFilled style={{ ...icon_style }} />
+              <FlagFilled style={{ ...icon_style, color: '#1449bb' }} />
               Not a bed In a box, arrives uncompressed
             </p>
 
