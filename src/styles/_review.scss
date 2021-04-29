@@ -45,6 +45,12 @@
       }
     }
 
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 10px;
+    }
+
     .right-side {
       padding: 20px;
 
@@ -62,6 +68,14 @@
           left: 50%;
           top: 50%;
           transform: translate(calc(-50% - 5px), -50%);
+        }
+
+        .image {
+          margin: 0 auto;
+          @media (min-width: 992px) {
+            width: 400px;
+            height: 376px;
+          }
         }
       }
 

@@ -1,14 +1,19 @@
 import React from 'react';
-import { Button, Col, Input, Row } from 'antd';
+import { Button, Col, Input, Row, Image } from 'antd';
 import { CheckOutlined, FlagFilled, GlobalOutlined } from '@ant-design/icons';
 import Slider from 'react-slick';
 import { Rating } from '@components/rating';
 import { PriceCard } from '@components/pricing';
 import { Faq } from '@components/Faq';
 import { TopProduct } from '@components/products/topProduct';
+import { Grid } from 'antd';
+
+const { useBreakpoint } = Grid;
 
 const Main: React.FC = () => {
   const { TextArea } = Input;
+
+  const screens = useBreakpoint();
 
   const price = 1299;
 
@@ -208,6 +213,14 @@ const Main: React.FC = () => {
                 Soft, medium, or firm
               </li>
             </ul>
+            <div className="buttons">
+              <Button icon={<GlobalOutlined />} type="primary">
+                visit website
+              </Button>
+              <Button className="secondary">
+                Visit saatva mattress <img src="imgs/right-arrow.png" alt="" />
+              </Button>
+            </div>
           </Col>
           <Col
             span={20}
@@ -217,17 +230,7 @@ const Main: React.FC = () => {
             className="right-side"
           >
             <div className="company-logo">
-              <img src="imgs/back1.png" alt="" className="background" />
-              <img src="imgs/comp1.png" alt="" className="company-avatar" />
-            </div>
-
-            <div className="buttons">
-              <Button icon={<GlobalOutlined />} type="primary">
-                visit website
-              </Button>
-              <Button className="secondary">
-                Visit saatva mattress <img src="imgs/right-arrow.png" alt="" />
-              </Button>
+              <img src="imgs/image1.png" className="image" />
             </div>
           </Col>
         </Row>
