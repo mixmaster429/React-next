@@ -39,63 +39,43 @@ const Home: React.FC = () => {
       <Header />
 
       <section className="top-section">
-        <div className="text-wrapper">
-          <h1>TOP 10 Best Mattresses April 2021</h1>
+        <div className="container">
+          <div className="text-wrapper">
+            <h1>TOP 10 Best Mattresses April 2021</h1>
 
-          <p className="description">
-            You will spend a third of your life on a mattress. MattressVerdict
-            is here to help you make a better choice when buying an online
-            mattress. We provide detailed reviews of the best rated mattresses
-            in 2021.
-          </p>
+            <p className="description">
+              You will spend a third of your life on a mattress. MattressVerdict
+              is here to help you make a better choice when buying an online
+              mattress. We provide detailed reviews of the best rated mattresses
+              in 2021.
+            </p>
 
-          <p className="details">
-            Advertising Disclosure: We receive referral fees from the brands
-            listed below. <a href="#">Full Disclosure</a>
-          </p>
+            <p className="details">
+              Advertising Disclosure: We receive referral fees from the brands
+              listed below. <a href="#">Full Disclosure</a>
+            </p>
 
-          <img src="imgs/default.png" alt="" />
+            <img src="imgs/default.png" alt="" />
+          </div>
         </div>
       </section>
 
       <section className="site-reviews">
-        <Row>
-          <Col
-            span={20}
-            offset={2}
-            xl={{ span: 20, offset: 2 }}
-            xxl={{ span: 18, offset: 3 }}
-          >
-            <Row justify="space-around">
-              <Col
-                span={23}
-                xl={{ span: 7 }}
-                lg={{ span: 16 }}
-                md={{ span: 16 }}
-              >
-                <SiteReview></SiteReview>
-              </Col>
+        <div className="container">
+          <Row gutter={[30, 0]}>
+            <Col lg={8} xs={24}>
+              <SiteReview></SiteReview>
+            </Col>
 
-              <Col
-                span={23}
-                xl={{ span: 7 }}
-                lg={{ span: 16 }}
-                md={{ span: 16 }}
-              >
-                <SiteReview></SiteReview>
-              </Col>
+            <Col lg={8} xs={24}>
+              <SiteReview></SiteReview>
+            </Col>
 
-              <Col
-                span={23}
-                xl={{ span: 7 }}
-                lg={{ span: 16 }}
-                md={{ span: 16 }}
-              >
-                <SiteReview></SiteReview>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+            <Col lg={8} xs={24}>
+              <SiteReview></SiteReview>
+            </Col>
+          </Row>
+        </div>
       </section>
 
       <Products></Products>
