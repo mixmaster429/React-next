@@ -16,12 +16,15 @@ export const Header: React.FC = () => {
 
   return (
     <div className="header">
-      <Row style={{ width: '100%' }}>
-        <Col span={20} offset={2}>
-          <div className="navbar">
-            <Logo />
 
-            <Menu theme="light" mode="horizontal">
+    
+      <div className="container">
+        <Row  align="middle">
+          <Col lg={6} xs={20}>
+            <Logo />
+          </Col>
+          <Col lg={18} xs={4}>
+            <Menu mode="horizontal">
               <Menu.Item key="1">Mattresses Types</Menu.Item>
               <Menu.Item key="2">Compare Prices</Menu.Item>
               <Menu.Item key="3">
@@ -30,31 +33,30 @@ export const Header: React.FC = () => {
               <Menu.Item key="4">Compare Mattresses</Menu.Item>
               <Menu.Item key="5">All Promo Codes</Menu.Item>
             </Menu>
-
-            <div className="mobile-menu-toggle">
+            {/* <div className="mobile-menu-toggle">
               <MenuOutlined style={{ fontSize: 20 }} onClick={showDrawer} />
-            </div>
-          </div>
-        </Col>
-      </Row>
+            </div> */}
+          </Col>
+        </Row>
 
-      <Drawer
-        placement="right"
-        closable={true}
-        onClose={onClose}
-        visible={visible}
-        className="mobile-menu"
-      >
-        <Menu theme="light" mode="vertical">
-          <Menu.Item key="1">Mattresses Types</Menu.Item>
-          <Menu.Item key="2">Compare Prices</Menu.Item>
-          <Menu.Item key="3">
-            <Link href="/review">Reviews</Link>
-          </Menu.Item>
-          <Menu.Item key="4">Compare Mattresses</Menu.Item>
-          <Menu.Item key="5">All Promo Codes</Menu.Item>
-        </Menu>
-      </Drawer>
+        <Drawer
+          placement="right"
+          closable={true}
+          onClose={onClose}
+          visible={visible}
+          className="mobile-menu"
+        >
+          <Menu theme="light" mode="vertical">
+            <Menu.Item key="1">Mattresses Types</Menu.Item>
+            <Menu.Item key="2">Compare Prices</Menu.Item>
+            <Menu.Item key="3">
+              <Link href="/review">Reviews</Link>
+            </Menu.Item>
+            <Menu.Item key="4">Compare Mattresses</Menu.Item>
+            <Menu.Item key="5">All Promo Codes</Menu.Item>
+          </Menu>
+        </Drawer>
+      </div>
     </div>
   );
 };
