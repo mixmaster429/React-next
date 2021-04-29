@@ -1,40 +1,20 @@
 .header {
-  height: 60px;
-  width: 100%;
-  display: flex;
-  align-items: center;
   background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 10;
+  .container > .ant-row {
+    height: 60px;
+  }
 
-  .navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
 
     ul {
-      border: none;
-      width: 100%;
       text-align: right;
-
-      @media (max-width: 1200px) {
-        display: none;
-      }
-
       li {
         font-family: 'Montserrat';
         font-size: 16px;
       }
     }
-
-    .mobile-menu-toggle {
-      display: flex;
-      align-items: center;
-
-      @media (min-width: 1200px) {
-        display: none;
-      }
-    }
-  }
 }
 
 .mobile-menu {
@@ -45,4 +25,8 @@
   ul {
     border: none;
   }
+}
+
+.ant-menu-horizontal {
+  border: none;
 }

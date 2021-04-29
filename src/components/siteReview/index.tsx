@@ -2,11 +2,16 @@ import React from 'react';
 import { Rate, Button } from 'antd';
 import { GlobalOutlined } from '@ant-design/icons';
 
-export const SiteReview: React.FC = () => {
+interface ReviewsProps {
+  number: string;
+  brandImage: string;
+}
+
+export const SiteReview: React.FC<ReviewsProps> = ({ number, brandImage }) => {
   return (
     <div className="site-review">
-      <img src="imgs/num1.png" alt="" className="number" />
-      <img src="imgs/site1.png" alt="" />
+      <img src={number} alt="number" className="number" />
+      <img src={brandImage} alt="brand" />
 
       <div className="rating">
         <p className="rating-value">Rating 9.9</p>
