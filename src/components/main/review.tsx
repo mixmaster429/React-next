@@ -176,7 +176,7 @@ const Main: React.FC = () => {
       <section className="section-header">
         <Row>
           <Col
-            span={20}
+            span={23}
             offset={1}
             xl={{ span: 10, offset: 3 }}
             lg={{ span: 9, offset: 1 }}
