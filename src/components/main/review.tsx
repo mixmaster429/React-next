@@ -1,19 +1,19 @@
 import React from 'react';
-import { Button, Col, Input, Row, Image } from 'antd';
-import { CheckOutlined, FlagFilled, GlobalOutlined } from '@ant-design/icons';
+import { Button, Col, Input, Row } from 'antd';
+import {
+  CheckOutlined,
+  FlagFilled,
+  GlobalOutlined,
+  StarFilled,
+} from '@ant-design/icons';
 import Slider from 'react-slick';
 import { Rating } from '@components/rating';
 import { PriceCard } from '@components/pricing';
 import { Faq } from '@components/Faq';
 import { TopProduct } from '@components/products/topProduct';
-import { Grid } from 'antd';
-
-const { useBreakpoint } = Grid;
 
 const Main: React.FC = () => {
   const { TextArea } = Input;
-
-  const screens = useBreakpoint();
 
   const price = 1299;
 
@@ -186,6 +186,24 @@ const Main: React.FC = () => {
             xl={{ span: 10, offset: 3 }}
             lg={{ span: 9, offset: 1 }}
           >
+            <div className="ratings">
+              <div className="rate ">
+                <div>
+                  <p>Rating</p>
+                  <div className="stars">
+                    <StarFilled />
+                    <StarFilled />
+                    <StarFilled />
+                    <StarFilled />
+                    <StarFilled />
+                  </div>
+                </div>
+                <p className="rate-number">9.2</p>
+              </div>
+              <div className="image-container">
+                <img src="imgs/saatva.png" alt="company logo" />
+              </div>
+            </div>
             <p className="title">Saatva Mattress Review</p>
 
             <p className="sub-title">
@@ -229,9 +247,7 @@ const Main: React.FC = () => {
             lg={{ span: 11, offset: 2 }}
             className="right-side"
           >
-            <div className="company-logo">
-              <img src="imgs/image1.png" className="image" />
-            </div>
+            <img src="imgs/image1.png" className="image" />
           </Col>
         </Row>
       </section>
