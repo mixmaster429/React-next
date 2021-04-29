@@ -1,16 +1,26 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "overrides": [
     {
-      "files": ["*.js"],
+      "files": [
+        "*.js"
+      ],
       "rules": {
         "@typescript-eslint/no-var-requires": "off",
-        "indent": ["error", 2],
+        "indent": [
+          "error",
+          2
+        ],
         "prettier/prettier": [
           "off",
-          { "singleQuote": true, "endOfLine": "auto" }
+          {
+            "singleQuote": true,
+            "endOfLine": "auto"
+          }
         ]
       }
     }

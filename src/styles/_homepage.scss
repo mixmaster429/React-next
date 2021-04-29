@@ -1,4 +1,7 @@
 .homepage {
+  max-width: 1920px;
+  margin: 0 auto;
+
   .top-section {
     position: relative;
     text-align: center;
@@ -73,8 +76,6 @@
           }
         }
       }
-
-      
     }
 
     .site-review {
@@ -191,7 +192,7 @@
       }
 
       .section-title {
-        font-family: "Montserrat-Bold";
+        font-family: 'Montserrat-Bold';
         color: transparent;
         font-size: 100px;
         margin: 0;
@@ -427,7 +428,7 @@
       }
 
       .title {
-        font-family: "Montserrat-Bold";
+        font-family: 'Montserrat-Bold';
         font-size: 96px;
         line-height: 96px;
         color: transparent;

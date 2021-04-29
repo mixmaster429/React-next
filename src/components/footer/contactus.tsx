@@ -1,4 +1,4 @@
-import { Row, Col, Input, Space, Button } from 'antd';
+import { Row, Col, Input, Button } from 'antd';
 
 export const Contactus: React.FC = () => {
   const { TextArea } = Input;

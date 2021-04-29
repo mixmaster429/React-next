@@ -1,6 +1,11 @@
 import React from 'react';
 import { Button, Col, Input, Row } from 'antd';
-import { CheckOutlined, FlagFilled, GlobalOutlined } from '@ant-design/icons';
+import {
+  CheckOutlined,
+  FlagFilled,
+  GlobalOutlined,
+  StarFilled,
+} from '@ant-design/icons';
 import Slider from 'react-slick';
 import { Rating } from '@components/rating';
 import { PriceCard } from '@components/pricing';
@@ -176,15 +181,33 @@ const Main: React.FC = () => {
       <section className="section-header">
         <Row>
           <Col
-            span={20}
+            span={23}
             offset={1}
             xl={{ span: 10, offset: 3 }}
             lg={{ span: 9, offset: 1 }}
           >
+            <div className="ratings">
+              <div className="rate ">
+                <div>
+                  <p>Rating</p>
+                  <div className="stars">
+                    <StarFilled />
+                    <StarFilled />
+                    <StarFilled />
+                    <StarFilled />
+                    <StarFilled />
+                  </div>
+                </div>
+                <p className="rate-number">9.2</p>
+              </div>
+              <div className="image-container">
+                <img src="imgs/saatva.png" alt="company logo" />
+              </div>
+            </div>
             <p className="title">Saatva Mattress Review</p>
 
             <p className="sub-title">
-              <FlagFilled style={{ ...icon_style }} />
+              <FlagFilled style={{ ...icon_style, color: '#1449bb' }} />
               Not a bed In a box, arrives uncompressed
             </p>
 
@@ -208,19 +231,6 @@ const Main: React.FC = () => {
                 Soft, medium, or firm
               </li>
             </ul>
-          </Col>
-          <Col
-            span={20}
-            offset={1}
-            xl={{ span: 8, offset: 1 }}
-            lg={{ span: 11, offset: 2 }}
-            className="right-side"
-          >
-            <div className="company-logo">
-              <img src="imgs/back1.png" alt="" className="background" />
-              <img src="imgs/comp1.png" alt="" className="company-avatar" />
-            </div>
-
             <div className="buttons">
               <Button icon={<GlobalOutlined />} type="primary">
                 visit website
@@ -229,6 +239,15 @@ const Main: React.FC = () => {
                 Visit saatva mattress <img src="imgs/right-arrow.png" alt="" />
               </Button>
             </div>
+          </Col>
+          <Col
+            span={20}
+            offset={1}
+            xl={{ span: 8, offset: 1 }}
+            lg={{ span: 11, offset: 2 }}
+            className="right-side"
+          >
+            <img src="imgs/image1.png" className="image" />
           </Col>
         </Row>
       </section>

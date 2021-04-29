@@ -5,7 +5,7 @@ import { increase, decrease } from '@redux/actions';
 import { RootState } from '@redux/reducers';
 import { useAppDispatch } from '@redux/store';
 
-export default function Counter() {
+const Counter: React.FC = () => {
   const dispatch = useAppDispatch();
   const count = useSelector((state: RootState) => state.counter.count);
 
@@ -26,4 +26,6 @@ export default function Counter() {
       </a>
     </div>
   );
-}
+};
+
+export default Counter;
