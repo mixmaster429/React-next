@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rate, Button } from 'antd';
+import { Rate, Button, Row, Col } from 'antd';
 import { GlobalOutlined } from '@ant-design/icons';
 
 interface ReviewsProps {
@@ -10,13 +10,20 @@ interface ReviewsProps {
 export const SiteReview: React.FC<ReviewsProps> = ({ number, brandImage }) => {
   return (
     <div className="site-review">
-      <img src={number} alt="number" className="number" />
-      <img src={brandImage} alt="brand" />
-
-      <div className="rating">
-        <p className="rating-value">Rating 9.9</p>
-        <Rate disabled defaultValue={5} />
-      </div>
+      <Row align="middle">
+        <Col span={3} lg={3}>
+          <img src={number} alt="number" className="number" />
+        </Col>
+        <Col span={12} lg={11}>
+          <img src={brandImage} alt="brand" className="brand"/>
+        </Col>
+        <Col span={9} lg={10}>
+          <div className="rating">
+            <p className="rating-value">Rating 9.9</p>
+            <Rate disabled defaultValue={5} />
+          </div>
+        </Col>
+      </Row>
 
       <Button type="primary" icon={<GlobalOutlined />}>
         Visit website
