@@ -93,7 +93,7 @@ const Home: React.FC = () => {
       <section className="choose-best">
         <div className="section-banner">
           <Row>
-            <Col xl={{ span: 10, offset: 4 }} lg={{ span: 16, offset: 4 }}>
+            <Col xl={{ span: 10, offset: 1 }} lg={{ span: 16, offset: 1 }}>
               <p className="title">How to Choose the Best Mattress?</p>
             </Col>
 
@@ -102,7 +102,7 @@ const Home: React.FC = () => {
         </div>
 
         <Row>
-          <Col lg={{ span: 12, offset: 4 }}>
+          <Col lg={{ span: 14, offset: 2 }}>
             <div className="section-details">
               <p className="title">Comprehensive Guide for 2021</p>
               <p>
