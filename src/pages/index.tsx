@@ -62,7 +62,7 @@ const Home: React.FC = () => {
 
       <section className="site-reviews">
         <div className="container">
-          <Row gutter={[30, 0]}>
+          <Row gutter={[30, 20]}>
             <Col lg={8} xs={24}>
               <SiteReview
                 number="/imgs/number1.svg"
@@ -184,19 +184,34 @@ const Home: React.FC = () => {
       <section className="site-reviews slider">
         <Slider {...settings}>
           <div>
-            <SiteReview></SiteReview>
+            <SiteReview
+              number="/imgs/number1.svg"
+              brandImage="/imgs/nectar.svg"
+            />
           </div>
           <div>
-            <SiteReview></SiteReview>
+            <SiteReview
+              number="/imgs/number2.svg"
+              brandImage="/imgs/dreamcloud.svg"
+            />
           </div>
           <div>
-            <SiteReview></SiteReview>
+            <SiteReview
+              number="/imgs/number3.svg"
+              brandImage="/imgs/saatva.svg"
+            />
           </div>
           <div>
-            <SiteReview></SiteReview>
+            <SiteReview
+              number="/imgs/number1.svg"
+              brandImage="/imgs/nectar.svg"
+            />
           </div>
           <div>
-            <SiteReview></SiteReview>
+            <SiteReview
+              number="/imgs/number2.svg"
+              brandImage="/imgs/dreamcloud.svg"
+            />
           </div>
         </Slider>
       </section>
