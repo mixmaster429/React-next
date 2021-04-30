@@ -1,15 +1,14 @@
-import React from 'react';
 import { Footer, Header } from '@components';
 import Main from '@components/main/review';
 
 const Review: React.FC = () => {
   return (
     <div className="review-page">
-      <Header></Header>
+      <Header/>
 
-      <Main></Main>
+      <Main/>
 
-      <Footer></Footer>
+      <Footer/>
     </div>
   );
 };
