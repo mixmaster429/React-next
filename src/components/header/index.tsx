@@ -15,9 +15,7 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <div className="header">
-
-    
+    <div className="header">    
       <div className="container">
         <Row  align="middle">
           <Col lg={6} xs={20}>
@@ -33,9 +31,6 @@ export const Header: React.FC = () => {
               <Menu.Item key="4">Compare Mattresses</Menu.Item>
               <Menu.Item key="5">All Promo Codes</Menu.Item>
             </Menu>
-            {/* <div className="mobile-menu-toggle">
-              <MenuOutlined style={{ fontSize: 20 }} onClick={showDrawer} />
-            </div> */}
           </Col>
         </Row>
 

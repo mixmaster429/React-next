@@ -65,23 +65,23 @@ const Home: React.FC = () => {
           <Row gutter={[30, 20]}>
             <Col lg={8} xs={24}>
               <SiteReview
-                number="/imgs/number1.svg"
-                brandImage="/imgs/nectar.svg"
+                number="imgs/number1.svg"
+                brandImage="imgs/nectar.svg"
               />
 
             </Col>
 
             <Col lg={8} xs={24}>
               <SiteReview
-                number="/imgs/number2.svg"
-                brandImage="/imgs/dreamcloud.svg"
+                number="imgs/number2.svg"
+                brandImage="imgs/dreamcloud.svg"
               />
             </Col>
 
             <Col lg={8} xs={24}>
               <SiteReview
-                number="/imgs/number3.svg"
-                brandImage="/imgs/saatva.svg"
+                number="imgs/number3.svg"
+                brandImage="imgs/saatva.svg"
               />
             </Col>
           </Row>
