@@ -35,7 +35,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="homepage">
+    <div className="container homepage">
       <Header />
 
       <section className="top-section">
@@ -68,7 +68,6 @@ const Home: React.FC = () => {
                 number="imgs/number1.svg"
                 brandImage="imgs/nectar.svg"
               />
-
             </Col>
 
             <Col lg={8} xs={24}>
