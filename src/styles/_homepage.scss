@@ -130,7 +130,37 @@
   .products {
     position: relative;
 
+    @include breakpoint-down(medium) {
+      margin: 4px;
+      .tablist {
+        position: relative;
+        border-radius: 4px;
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      top: 0.009%;
+      right: 1%;
+      height: 33px;
+      width: 26px;
+      border-radius: 50%;
+      background: linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 0.95) 33.69%,
+        rgba(255, 255, 255, 0) 100%
+      );
+
+      img {
+        width: fit-content;
+      }
+    }
+
     .ant-tabs {
+      .tablist {
+        border-radius: 5px;
+      }
+
       .ant-tabs-nav {
         position: absolute;
         left: 50%;
@@ -538,22 +568,5 @@
         }
       }
     }
-  }
-}
-
-.slider-section {
-  padding: 0;
-  overflow: hidden;
-  margin: 4px;
-  .slick-slide > div {
-    text-align: center;
-    width: 100%;
-    display: inline-block;
-  }
-  .selected {
-    background-color: #b5b26f;
-    text-align: center;
-    width: 100%;
-    display: inline-block;
   }
 }
