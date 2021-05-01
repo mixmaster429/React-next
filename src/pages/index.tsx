@@ -35,7 +35,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="container homepage">
+    <div className="homepage">
       <Header />
 
       <section className="top-section">

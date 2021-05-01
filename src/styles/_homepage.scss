@@ -1,10 +1,12 @@
 .homepage {
+  overflow-x: hidden;
+
   .top-section {
     position: relative;
     text-align: center;
     padding: 40px 20px 130px;
     background-color: $light-background;
-    border-bottom: 3px solid rgba(181, 178, 111, 0.3);
+    border-bottom: 3px solid rgba(8, 8, 7, 0.3);
 
     @media (max-width: 425px) {
       padding-bottom: 70px;
@@ -290,8 +292,8 @@
             }
 
             .description {
-              width: 50%;
-              padding: 10px;
+              width: 60%;
+              padding: 30px;
 
               @media (max-width: 576px) {
                 width: 100%;
@@ -536,5 +538,22 @@
         }
       }
     }
+  }
+}
+
+.slider-section {
+  padding: 0;
+  overflow: hidden;
+  margin: 4px;
+  .slick-slide > div {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+  .selected {
+    background-color: #b5b26f;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
   }
 }

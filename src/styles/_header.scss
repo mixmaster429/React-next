@@ -1,3 +1,33 @@
+.ant-drawer-content-wrapper {
+  width: 100% !important;
+}
+
+.ant-drawer {
+  margin-top: 60px;
+}
+
+div.ant-drawer-content-wrapper {
+  a {
+    color: $primary-color;
+  }
+}
+
+div.ant-drawer-content-wrapper
+  > div
+  > div
+  > div.ant-drawer-header-no-title
+  > button {
+  display: none;
+}
+
+div.ant-drawer-content-wrapper > div > div > div.ant-drawer-body > ul {
+  margin-top: 10%;
+  color: $primary-color;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  letter-spacing: 2px;
+}
+
 .header {
   background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
@@ -7,23 +37,55 @@
     height: 60px;
   }
 
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-    ul {
-      text-align: right;
-      li {
-        font-family: 'Montserrat';
-        font-size: 16px;
+    @include breakpoint-up(xlarge) {
+      justify-content: flex-end;
+    }
+
+    &__item {
+      padding-left: 3px;
+      padding-right: 3px;
+      color: $nav-color;
+      cursor: pointer;
+      letter-spacing: 1px;
+      &:hover {
+        color: lighten($color: #051e4e, $amount: 20);
+      }
+
+      @include breakpoint-up(xlarge) {
+        padding-right: 10px;
+        padding-left: 10px;
       }
     }
-}
-
-.mobile-menu {
-  @media (min-width: 1200px) {
-    display: none;
   }
 
   ul {
-    border: none;
+    text-align: right;
+    li {
+      font-family: 'Montserrat';
+      font-size: 16px;
+    }
+  }
+
+  &__content {
+    position: relative;
+
+    .icon {
+      position: absolute;
+      top: 30%;
+      right: 0;
+      font-size: 20px;
+      color: $primary-color;
+
+      &:hover {
+        color: lighten($primary-color, 10%);
+      }
+    }
   }
 }
 
