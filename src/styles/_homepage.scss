@@ -82,6 +82,25 @@
       }
       .rating {
         max-width: 150px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat';
+        font-weight: 700;
+
+        a {
+          height: 35px;
+          padding: 5px;
+          color: $primary-color;
+          text-align: center;
+
+          &:hover {
+            color: darken($color: $primary-color, $amount: 30%);
+          }
+
+          svg {
+            vertical-align: middle;
+          }
+        }
       }
       .ant-rate {
         width: 100%;
