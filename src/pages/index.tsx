@@ -121,14 +121,21 @@ const Home: React.FC = () => {
 
         <Products></Products>
 
-        <section className="choose-best">
+        <Col
+          span="20"
+          offset="1"
+          xl={{ span: '16', offset: '4' }}
+          className="choose-best"
+        >
           <div className="section-banner">
             <Row>
-              <Col xl={{ span: 10, offset: 1 }} lg={{ span: 16, offset: 1 }}>
-                <p className="title">How to Choose the Best Mattress?</p>
+              <Col xl={{ span: 20, offset: 1 }} lg={{ span: 16, offset: 1 }}>
+                <p className="title">
+                  How to Choose <br /> the Best Mattress?
+                </p>
               </Col>
 
-              <img src="imgs/image1.png" alt="" />
+              <img className="mattress-image" src="imgs/image1.png" alt="" />
             </Row>
           </div>
 
@@ -211,7 +218,7 @@ const Home: React.FC = () => {
               </div>
             </Col>
           </Row>
-        </section>
+        </Col>
 
         <section className="site-reviews slider">
           <Slider {...settings}>

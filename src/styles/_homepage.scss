@@ -482,15 +482,15 @@
 
       img {
         position: absolute;
-        // right: 200px;
-        right: 0;
-        top: 0;
+        width: 54%;
+        top: 46%;
         z-index: 1;
+        left: 45%;
 
         @media (max-width: 1200px) {
-          width: 500px;
-          top: 100px;
-          right: 0;
+          right: 0%;
+          top: 47%;
+          z-index: 1;
         }
 
         @media (max-width: 992px) {
