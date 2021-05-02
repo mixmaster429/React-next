@@ -122,7 +122,7 @@ const Home: React.FC = () => {
         <Products></Products>
 
         <Col
-          span="20"
+          span="22"
           offset="1"
           xl={{ span: '16', offset: '4' }}
           className="choose-best"

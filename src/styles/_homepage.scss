@@ -487,6 +487,11 @@
         z-index: 1;
         left: 45%;
 
+        @include breakpoint-up(xxlarge) {
+          width: 740px;
+          top: 19%;
+        }
+
         @media (max-width: 1200px) {
           right: 0%;
           top: 47%;
