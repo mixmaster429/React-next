@@ -670,3 +670,124 @@
     }
   }
 }
+
+.popup-small {
+  background-color: rgba($color: $primary-color, $alpha: 0.8);
+
+  .offer-card-small {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 35px;
+    position: relative;
+
+    &__content {
+      position: relative;
+      width: 350px;
+      height: 630px;
+      background: #f8f7f1;
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 88px;
+
+      .cross {
+        position: absolute;
+        top: -5%;
+        right: -10%;
+      }
+
+      .float-div {
+        position: absolute;
+        width: 150px;
+        height: 28px;
+        font-size: 11px;
+        top: 3%;
+        left: -6%;
+        background: blue;
+        display: flex;
+        color: white;
+        align-items: center;
+        padding: 2px;
+
+        p {
+          margin-bottom: 0px;
+          margin-left: 2px;
+        }
+      }
+    }
+
+    .ant-radio-inner {
+      background-color: rgba($color: #ffffff, $alpha: 0.5);
+    }
+
+    .ant-radio-inner::after {
+      top: -1px;
+      left: 0px;
+      display: table;
+      width: 105%;
+      height: 110%;
+      background-color: #f2c94c;
+    }
+
+    &__header-image {
+      margin-bottom: 30px;
+      max-height: 100px;
+    }
+
+    .main-image-container {
+      width: 120%;
+    }
+
+    &__main-image {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__button {
+      position: absolute;
+      color: white;
+      background-color: $primary-color;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 40px;
+      padding-left: 40px;
+      bottom: 0;
+      bottom: 5%;
+      left: 27%;
+    }
+
+    h3 {
+      font-family: Montserrat;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 51px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #454545;
+    }
+
+    blockquote {
+      font-family: Montserrat;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #b5916f;
+    }
+
+    &__togglers {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+  }
+}

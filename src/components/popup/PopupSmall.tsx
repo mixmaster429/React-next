@@ -3,9 +3,9 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface IPopup {}
+interface IPopupSmall {}
 
-export const Popup: React.FC<IPopup> = ({ children }) => {
+export const PopupSmall: React.FC<IPopupSmall> = ({ children }) => {
   const popupActive = useSelector<RootState>(
     (state) => state.homepage.popupActive,
   );
@@ -16,7 +16,7 @@ export const Popup: React.FC<IPopup> = ({ children }) => {
         style={{ zIndex: 10, visibility: popupActive ? 'visible' : 'hidden' }}
         className="span-full flex-jc-c flex-ai-c"
       >
-        <div className="popup full flex flex-jc-c flex-ai-c">{children}</div>
+        <div className="popup-small full flex flex-ai-c">{children}</div>
       </div>
     </div>
   );

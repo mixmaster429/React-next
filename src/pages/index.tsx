@@ -4,6 +4,31 @@ import { Row, Col } from 'antd';
 import Slider from 'react-slick';
 import { Popup } from '@components/popup';
 import { OfferCard } from '@components/offer-card';
+import { PopupSmall } from '@components/popup/PopupSmall';
+import { OfferCardSmall } from '@components/offer-card/OfferCardSmall';
+import { useSelector } from 'react-redux';
+import { RootState } from '@redux/reducers';
+
+const cards_detail = [
+  {
+    header_image: 'imgs/site1.png',
+    main_image: 'imgs/nector-mattrss.svg',
+    h3: 'FREE GIFTS!',
+    blockqoute: 'Special Sale',
+    choice_icon: 'icons/tick-icon.svg',
+    choice_color: '#FE6581',
+    choice_string: "EDITOR'S CHOICE",
+  },
+  {
+    header_image: 'imgs/site2.png',
+    main_image: 'imgs/dreamcloud-mattress.svg',
+    h3: 'Special SALE',
+    blockqoute: '$200 OFF + Gifts!',
+    choice_icon: 'icons/star-icon.svg',
+    choice_color: '#00B327',
+    choice_string: 'BIGGEST OFFER EVER',
+  },
+];
 
 const Home: React.FC = () => {
   const settings = {
@@ -35,6 +60,10 @@ const Home: React.FC = () => {
       },
     ],
   };
+
+  const offerNumber = useSelector<RootState>(
+    (state) => state.homepage.offerNumber,
+  );
 
   return (
     <>
@@ -221,26 +250,22 @@ const Home: React.FC = () => {
 
         <Footer></Footer>
       </div>
-      <Popup>
-        <OfferCard
-          header_image="imgs/site1.png"
-          main_image="imgs/nector-mattrss.svg"
-          h3="FREE GIFTS!"
-          blockqoute="Special Sale"
-          choice_icon="icons/tick-icon.svg"
-          choice_color="#FE6581"
-          choice_string="EDITOR'S CHOICE"
-        />
-        <OfferCard
-          header_image="imgs/site2.png"
-          main_image="imgs/dreamcloud-mattress.svg"
-          h3="Special SALE"
-          blockqoute="$200 OFF + Gifts!"
-          choice_icon="icons/star-icon.svg"
-          choice_color="#00B327"
-          choice_string="BIGGEST OFFER EVER"
-        />
-      </Popup>
+      <div className="hide-for-large">
+        <Popup>
+          {cards_detail.map((detail, index) => (
+            <OfferCard key={index} {...detail} />
+          ))}
+        </Popup>
+      </div>
+      <div className="hide-for-large-up">
+        <PopupSmall>
+          {cards_detail
+            .filter((detail, index) => index === offerNumber)
+            .map((detail, index) => (
+              <OfferCardSmall key={index} {...detail} />
+            ))}
+        </PopupSmall>
+      </div>
     </>
   );
 };

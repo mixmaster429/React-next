@@ -29,7 +29,7 @@ export const OfferCard: React.FC<IOfferCard> = ({
   };
 
   return (
-    <div className="offer-card hide-for-large">
+    <div className="offer-card">
       <div
         style={{ height: '100px' }}
         className="offer-card__item flex flex-ai-c"
