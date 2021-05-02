@@ -42,6 +42,12 @@ div.ant-drawer-content-wrapper > div > div > div.ant-drawer-body > ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: Montserate, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-align: left;
 
     @include breakpoint-up(xlarge) {
       justify-content: flex-end;
@@ -52,9 +58,9 @@ div.ant-drawer-content-wrapper > div > div > div.ant-drawer-body > ul {
       padding-right: 3px;
       color: $nav-color;
       cursor: pointer;
-      letter-spacing: 1px;
+      letter-spacing: 1.75px;
       &:hover {
-        color: lighten($color: #051e4e, $amount: 20);
+        color: lighten($color: #051e4e, $amount: 50);
       }
 
       @include breakpoint-up(xlarge) {
