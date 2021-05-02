@@ -1,0 +1,114 @@
+.background-blue {
+  background: blue;
+  border: 2px solid black;
+}
+.background-green {
+  background: green;
+  border: 2px solid black;
+}
+.background-purple {
+  background: purple;
+  border: 2px solid black;
+}
+.background-orange {
+  background: orange;
+  border: 2px solid black;
+}
+
+// Flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+.hide-for-small {
+  @include breakpoint-down(small) {
+    display: none !important;
+  }
+}
+
+.hide-for-small-up {
+  @include breakpoint-up(small) {
+    display: none !important;
+  }
+}
+
+.hide-for-medium {
+  @include breakpoint-down(medium) {
+    display: none !important;
+  }
+}
+
+.hide-for-medium-up {
+  @include breakpoint-up(medium) {
+    display: none !important;
+  }
+}
+
+.hide-for-large {
+  @include breakpoint-down(large) {
+    display: none !important;
+  }
+}
+
+.hide-for-large-up {
+  @include breakpoint-up(large) {
+    display: none !important;
+  }
+}
+
+.hide-for-xlarge {
+  @include breakpoint-down(xlarge) {
+    display: none !important;
+  }
+}
+
+.hide-for-xlarge-up {
+  @include breakpoint-up(xlarge) {
+    display: none !important;
+  }
+}
+
+.hide-for-xxlarge {
+  @include breakpoint-down(xlarge) {
+    display: none !important;
+  }
+}
+
+.hide-for-xxlarge-up {
+  @include breakpoint-up(xlarge) {
+    display: none !important;
+  }
+}
+
+.span-full {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full {
+  height: 100%;
+  width: 100%;
+}

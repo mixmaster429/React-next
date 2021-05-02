@@ -570,3 +570,103 @@
     }
   }
 }
+
+.popup {
+  background-color: rgba($color: $primary-color, $alpha: 0.8);
+
+  .offer-card {
+    width: 440px;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 50px;
+    position: relative;
+
+    &__header-image {
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-family: Montserrat;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 59px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    blockquote {
+      font-family: Montserrat;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 39px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    &__main-image {
+      width: 500px;
+      height: 250px;
+    }
+
+    &__button {
+      color: white;
+      background-color: $primary-color;
+      margin-top: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    .cross {
+      position: absolute;
+      top: -11%;
+      right: -13%;
+    }
+
+    .float-div {
+      position: absolute;
+      width: 202px;
+      height: 28px;
+      top: 2%;
+      left: -5%;
+      background: blue;
+      display: flex;
+      color: white;
+
+      img {
+        margin-left: 4px;
+      }
+
+      p {
+        margin: 0;
+        margin-left: 4px;
+      }
+    }
+
+    &:first-child {
+      background-color: white;
+      .cross {
+        display: none;
+      }
+      &__header-image {
+        width: 240px;
+      }
+    }
+
+    &:nth-child(2) {
+      background: #f8f7f1;
+      .float-div {
+        left: inherit;
+        right: -5%;
+      }
+    }
+  }
+}

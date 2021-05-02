@@ -13,14 +13,6 @@
   src: url(./Montserrat-SemiBold.ttf);
 }
 
-$background-color: #b5b26f;
-$light-background: #f8f7f1;
-$main-color: #454545;
-$primary-color: #1449bb;
-$star-yellow: #f2c94c;
-$lightbrown: #b5916f;
-$nav-color: #051e4e;
-
 body {
   background-color: white;
 }
@@ -110,99 +102,5 @@ textarea {
         content: '';
       }
     }
-  }
-}
-
-.background-blue {
-  background: blue;
-  border: 2px solid black;
-}
-.background-green {
-  background: green;
-  border: 2px solid black;
-}
-.background-purple {
-  background: purple;
-  border: 2px solid black;
-}
-.background-orange {
-  background: orange;
-  border: 2px solid black;
-}
-
-// Flexbox
-.flex {
-  display: flex;
-
-  &-jc-sb {
-    justify-content: space-between;
-  }
-
-  &-jc-c {
-    justify-content: center;
-  }
-
-  &-ai-c {
-    align-items: center;
-  }
-}
-
-.hide-for-small {
-  @include breakpoint-down(small) {
-    display: none;
-  }
-}
-
-.hide-for-small-up {
-  @include breakpoint-up(small) {
-    display: none;
-  }
-}
-
-.hide-for-medium {
-  @include breakpoint-down(medium) {
-    display: none;
-  }
-}
-
-.hide-for-medium-up {
-  @include breakpoint-up(medium) {
-    display: none;
-  }
-}
-
-.hide-for-large {
-  @include breakpoint-down(large) {
-    display: none;
-  }
-}
-
-.hide-for-large-up {
-  @include breakpoint-up(large) {
-    display: none;
-  }
-}
-
-.hide-for-xlarge {
-  @include breakpoint-down(xlarge) {
-    display: none;
-  }
-}
-
-.hide-for-xlarge-up {
-  @include breakpoint-up(xlarge) {
-    display: none;
-  }
-}
-
-.hide-for-xxlarge {
-  @include breakpoint-down(xlarge) {
-    display: none;
-  }
-}
-
-.hide-for-xxlarge-up {
-  @include breakpoint-up(xlarge) {
-    display: none;
   }
 }
